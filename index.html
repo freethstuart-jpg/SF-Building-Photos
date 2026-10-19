@@ -260,19 +260,19 @@
     .hero-content { display: contents; }
     .hero-content::before { display: none; }
     .hero-content > * { position: relative; z-index: 1; grid-column: 1; }
-    .hero .lockup { grid-row: 1; margin: 0 20px; padding: 46px 0 50px; }
+    .hero .lockup { grid-row: 1; margin: 0 20px; padding: 46px 0 80px; }
     .hero .lockup .mark { width: 160px; filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .55)) drop-shadow(0 0 18px rgba(0, 0, 0, .45)); }
     .hero .lockup-word { text-shadow: 0 1px 2px rgba(0, 0, 0, .8), 0 0 14px rgba(0, 0, 0, .6); }
     .hero .lockup-rule { box-shadow: 0 1px 6px rgba(0, 0, 0, .5); }
-    .hero h1 { grid-row: 2; margin: 22px 20px 16px; }
+    .hero h1 { grid-row: 2; margin: 6px 20px 16px; }
     .hero .intro { grid-row: 3; margin: 0 20px 24px; }
     .hero .actions { grid-row: 4; width: calc(100% - 40px); }
     .hero .actions .btn { flex: 1 1 0; min-width: 0; padding: 0 10px; letter-spacing: .14em; }
     .hero .stats { grid-row: 5; width: calc(100% - 40px); margin: 30px 0 36px; }
     .hero-photo { grid-row: 1; grid-column: 1; justify-self: stretch; align-self: stretch; display: block; position: relative; z-index: 0; height: auto; }
     .hero-photo .hp-bottom { display: none; }
-    .hero-photo .hp-top { position: absolute; inset: 0; width: 100%; height: 100%; max-height: none; object-position: center 62%; }
-    .hero-photo::after { background: linear-gradient(180deg, rgba(10, 10, 11, .46) 0%, rgba(10, 10, 11, .34) 55%, rgba(10, 10, 11, .6) 80%, var(--bg) 100%); }
+    .hero-photo .hp-top { position: absolute; left: 0; right: 0; top: auto; bottom: 0; width: 100%; height: auto; min-height: 100%; max-height: none; object-fit: cover; object-position: center bottom; }
+    .hero-photo::after { background: linear-gradient(180deg, rgba(10, 10, 11, .42) 0%, rgba(10, 10, 11, .26) 40%, rgba(10, 10, 11, .14) 64%, rgba(10, 10, 11, .45) 84%, var(--bg) 100%); }
 
     /* Sections: tighter spacing */
     .section { padding: 56px 0; }
@@ -374,7 +374,7 @@
         <span class="lockup-word" aria-hidden="true">Building &amp; Carpentry</span>
         <span class="lockup-rule" aria-hidden="true"></span>
       </div>
-      <h1 id="hero-title">Building, carpentry &amp; repairs across Cornwall</h1>
+      <h1 id="hero-title">Building &amp; carpentry across Cornwall</h1>
       <p class="intro">I'm Stuart Freeth, a general builder with 7 years of experience. Carpentry, fencing, walls, concreting and repairs, done properly. Based in Truro, with a yard on the Roseland.</p>
       <div class="actions">
         <a class="btn btn-solid" href="mailto:freethstuart@gmail.com?subject=Building%20enquiry">
@@ -390,7 +390,10 @@
       </dl>
     </div>
     <div class="hero-photo">
-      <img class="hp-top" src="images/hero-hut.jpg" alt="A finished navy shepherd's hut with hardwood doors and steps" fetchpriority="high">
+      <picture>
+        <source media="(max-width: 640px)" srcset="images/hero-hut-mobile.jpg">
+        <img class="hp-top" src="images/hero-hut.jpg" alt="A finished navy shepherd's hut with hardwood doors and steps" fetchpriority="high">
+      </picture>
       <img class="hp-bottom" src="images/projects/garage-rebuild/after.jpg" alt="A rebuilt garage with a timber-clad gable and new roof">
     </div>
   </section>
