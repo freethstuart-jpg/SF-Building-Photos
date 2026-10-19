@@ -64,29 +64,6 @@
       ]
     },
     {
-      "slug": "balcony",
-      "title": "Balcony balustrade",
-      "description": "New timber posts, rails and capping built around the original decorative ironwork panels.",
-      "before": [
-        "before.jpg"
-      ],
-      "after": [
-        "after-1.jpg",
-        "after-2.jpg"
-      ]
-    },
-    {
-      "slug": "porch",
-      "title": "Entrance porch",
-      "description": "A new porch framed up, sheathed and rendered, with a new front door and window.",
-      "during": [
-        "during.jpg"
-      ],
-      "after": [
-        "after.jpg"
-      ]
-    },
-    {
       "slug": "garage-rebuild",
       "title": "Garage rebuild",
       "description": "The old block garage replaced with a new timber-framed building, rendered and clad, under a new roof.",
@@ -136,6 +113,29 @@
       "after": [
         "after-1.jpg",
         "after-2.jpg"
+      ]
+    },
+    {
+      "slug": "balcony",
+      "title": "Balcony balustrade",
+      "description": "New timber posts, rails and capping built around the original decorative ironwork panels.",
+      "before": [
+        "before.jpg"
+      ],
+      "after": [
+        "after-1.jpg",
+        "after-2.jpg"
+      ]
+    },
+    {
+      "slug": "porch",
+      "title": "Entrance porch",
+      "description": "A new porch framed up, sheathed and rendered, with a new front door and window.",
+      "during": [
+        "during.jpg"
+      ],
+      "after": [
+        "after.jpg"
       ]
     }
   ],
