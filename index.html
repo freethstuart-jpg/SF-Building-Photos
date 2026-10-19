@@ -3,282 +3,605 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SF Building &amp; Carpentry · Stuart Freeth · Truro &amp; the Roseland</title>
-<meta name="description" content="SF Building & Carpentry — Stuart Freeth, general builder with 6 years of experience. Based in Truro with a yard on the Roseland, Cornwall.">
+<title>SF Building &amp; Carpentry · Renovations &amp; extensions · Truro &amp; the Roseland</title>
+<meta name="description" content="SF Building &amp; Carpentry. Stuart Freeth, general builder with 6 years of experience in renovations and extensions. Based in Truro with a yard on the Roseland, Cornwall.">
+<meta name="theme-color" content="#0A0A0B">
 <link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SF Building &amp; Carpentry">
+<meta property="og:description" content="Renovations and extensions across Cornwall. Stuart Freeth, based in Truro with a yard on the Roseland.">
+<meta property="og:image" content="https://freethstuart-jpg.github.io/SF-Building-Photos/og-image.jpg">
+<meta property="og:url" content="https://freethstuart-jpg.github.io/SF-Building-Photos/">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"GeneralContractor","name":"SF Building & Carpentry","description":"Renovations, extensions, carpentry and concreting across Cornwall.","url":"https://freethstuart-jpg.github.io/SF-Building-Photos/","image":"https://freethstuart-jpg.github.io/SF-Building-Photos/og-image.jpg","logo":"https://freethstuart-jpg.github.io/SF-Building-Photos/apple-touch-icon.png","telephone":"+447484258141","email":"freethstuart@gmail.com","founder":{"@type":"Person","name":"Stuart Freeth"},"address":{"@type":"PostalAddress","addressLocality":"Truro","addressRegion":"Cornwall","addressCountry":"GB"},"areaServed":{"@type":"AdministrativeArea","name":"Cornwall"}}
+</script>
 <style>
   :root {
-    --ink: #17191C;
-    --ink-2: #2A2D31;
-    --paper: #F5F4F0;
-    --white: #FFFFFF;
-    --yellow: #F2B705;
-    --muted: #5B5F66;
-    --muted-dark: #B9BCC2;
+    --bg: #0A0A0B;
+    --bg-2: #0F1012;
+    --card: #141518;
+    --card-2: #1A1B1F;
+    --line: rgba(255, 255, 255, .12);
+    --line-2: rgba(255, 255, 255, .24);
+    --text: #F3F3F1;
+    --muted: #A6A9B0;
+    --dim: #868991;
+    --glow-text: 0 0 10px rgba(255, 255, 255, .55), 0 0 28px rgba(255, 255, 255, .22);
+    color-scheme: dark;
   }
   * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body { margin: 0; font-family: 'Montserrat', system-ui, sans-serif; color: var(--ink); background: var(--paper); line-height: 1.55; }
-  img { max-width: 100%; display: block; }
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+  html.lock { overflow: hidden; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif; font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  img { display: block; max-width: 100%; }
   a { color: inherit; }
-  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 20px; }
+  :focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  .skip { position: absolute; left: -9999px; top: 8px; z-index: 60; padding: 10px 14px; background: #fff; color: #000; font-weight: 600; }
+  .skip:focus { left: 8px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+  /* Logo */
+  .mark { display: block; height: auto; color: #fff; overflow: visible; }
+  .glow { filter: drop-shadow(0 0 2px rgba(255, 255, 255, .9)) drop-shadow(0 0 14px rgba(255, 255, 255, .5)) drop-shadow(0 0 44px rgba(255, 255, 255, .25)); }
+  .glow-sm { filter: drop-shadow(0 0 1.5px rgba(255, 255, 255, .85)) drop-shadow(0 0 8px rgba(255, 255, 255, .4)); }
+  .lockup { display: inline-flex; flex-direction: column; align-items: center; }
+  .lockup .mark { width: 230px; }
+  .lockup-word { margin-top: 22px; padding-left: .42em; color: #fff; font-size: 15px; font-weight: 600; letter-spacing: .42em; text-transform: uppercase; white-space: nowrap; text-shadow: var(--glow-text); }
+  .lockup-rule { width: 38%; height: 3px; margin-top: 16px; background: #fff; box-shadow: 0 0 8px rgba(255, 255, 255, .7), 0 0 22px rgba(255, 255, 255, .3); }
+  .ico { width: 20px; height: 20px; flex: none; }
 
   /* Header */
-  header { background: var(--ink); color: var(--white); position: sticky; top: 0; z-index: 10; }
-  .bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 20px; max-width: 1160px; margin: 0 auto; }
-  .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-  .brand svg { width: 44px; height: 44px; flex: none; }
-  .brand-name { font-weight: 800; font-size: 15px; letter-spacing: .5px; text-transform: uppercase; line-height: 1.2; }
-  .brand-name span { display: block; color: var(--yellow); font-weight: 600; font-size: 11px; letter-spacing: 3px; }
-  nav { display: flex; align-items: center; gap: 22px; font-weight: 600; font-size: 14px; }
-  nav a { text-decoration: none; }
-  nav a:hover { color: var(--yellow); }
-  .btn { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: 6px; font-weight: 800; font-size: 14px; text-decoration: none; text-transform: uppercase; letter-spacing: .5px; }
-  .btn-yellow { background: var(--yellow); color: var(--ink); }
-  .btn-yellow:hover { background: #FFC81F; }
-  .btn-ghost { border: 2px solid var(--white); color: var(--white); }
-  .btn-ghost:hover { background: var(--white); color: var(--ink); }
-  @media (max-width: 720px) { nav .link { display: none; } nav { gap: 10px; } .brand-name { font-size: 13px; } }
+  .site-header { position: sticky; top: 0; z-index: 30; background: rgba(10, 10, 11, .86); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+  .bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; max-width: 1200px; margin: 0 auto; padding: 12px 24px; }
+  .brand { display: flex; align-items: center; gap: 14px; min-width: 0; text-decoration: none; }
+  .brand .mark { width: 52px; flex: none; }
+  .brand-text { line-height: 1.3; white-space: nowrap; text-transform: uppercase; }
+  .brand-text b { display: block; font-size: 12px; font-weight: 600; letter-spacing: .24em; }
+  .brand-text span { display: block; font-size: 10px; font-weight: 500; letter-spacing: .32em; color: var(--muted); }
+  .nav { display: flex; align-items: center; gap: 30px; }
+  .nav .link { font-size: 12px; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; text-decoration: none; color: var(--muted); transition: color .2s, text-shadow .2s; }
+  .nav .link:hover { color: #fff; text-shadow: 0 0 10px rgba(255, 255, 255, .6); }
+
+  /* Buttons */
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 50px; padding: 0 26px; border: 1px solid transparent; border-radius: 2px; font: inherit; font-size: 12px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: box-shadow .25s, border-color .25s, background .25s, color .25s; }
+  .btn .ico { width: 18px; height: 18px; }
+  .btn-solid { background: #fff; color: #0A0A0B; }
+  .btn-solid:hover { box-shadow: 0 0 24px rgba(255, 255, 255, .45); }
+  .btn-line { border-color: rgba(255, 255, 255, .5); color: #fff; }
+  .btn-line:hover { border-color: #fff; box-shadow: 0 0 20px rgba(255, 255, 255, .22), inset 0 0 14px rgba(255, 255, 255, .07); }
+  .btn-sm { min-height: 44px; padding: 0 18px; }
 
   /* Hero */
-  .hero { background: var(--ink); color: var(--white); padding: 56px 0 64px; }
-  .hero-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 48px; align-items: center; }
-  .hero h1 { font-size: clamp(34px, 5.4vw, 60px); line-height: 1.05; margin: 0 0 18px; font-weight: 800; text-transform: uppercase; letter-spacing: -.5px; }
-  .hero h1 em { font-style: normal; color: var(--yellow); }
-  .hero p { color: var(--muted-dark); font-size: 17px; max-width: 46ch; margin: 0 0 28px; }
-  .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
-  .hero-photo { border-radius: 10px; overflow: hidden; aspect-ratio: 4 / 3; }
-  .hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 28%; }
-  @media (max-width: 860px) { .hero-grid { grid-template-columns: 1fr; gap: 32px; } .hero { padding: 36px 0 44px; } }
+  .hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); min-height: min(88vh, 800px); border-bottom: 1px solid var(--line); }
+  .hero-content { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 72px 40px 64px; text-align: center; }
+  .hero-content::before { content: ""; position: absolute; left: 50%; top: 32%; z-index: -1; width: 560px; height: 560px; max-width: 100%; transform: translate(-50%, -50%); background: radial-gradient(closest-side, rgba(255, 255, 255, .07), rgba(255, 255, 255, 0)); pointer-events: none; }
+  .hero .lockup { margin-bottom: 44px; }
+  .hero h1 { max-width: 17ch; margin: 0 0 18px; font-size: clamp(28px, 3.1vw, 42px); font-weight: 600; line-height: 1.14; letter-spacing: .04em; text-transform: uppercase; }
+  .intro { max-width: 44ch; margin: 0 0 32px; color: var(--muted); font-size: 17px; }
+  .actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; width: 100%; max-width: 460px; }
+  .actions .btn { flex: 1 1 200px; }
+  .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); width: 100%; max-width: 480px; margin: 44px 0 0; padding: 18px 0 0; border-top: 1px solid var(--line); }
+  .stats div { padding: 0 6px; }
+  .stats div + div { border-left: 1px solid var(--line); }
+  .stats dt { font-size: 10px; font-weight: 600; letter-spacing: .26em; text-transform: uppercase; color: var(--dim); }
+  .stats dd { margin: 6px 0 0; font-size: 16px; font-weight: 600; letter-spacing: .04em; }
+  .hero-photo { position: relative; overflow: hidden; background: var(--card); }
+  .hero-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 42%; }
+  .hero-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, var(--bg) 0%, rgba(10, 10, 11, .5) 12%, rgba(10, 10, 11, 0) 34%); }
+
+  /* Services ticker */
+  .ticker { overflow: hidden; border-bottom: 1px solid var(--line); background: var(--bg-2); }
+  .ticker-track { display: flex; width: max-content; animation: ticker 48s linear infinite; }
+  .ticker:hover .ticker-track { animation-play-state: paused; }
+  .ticker ul { display: flex; margin: 0; padding: 20px 0; list-style: none; }
+  .ticker li { display: flex; align-items: center; white-space: nowrap; font-size: 12px; font-weight: 600; letter-spacing: .3em; text-transform: uppercase; color: var(--muted); }
+  .ticker li::after { content: ""; width: 9px; height: 9px; margin: 6px 36px 0; border-top: 1.5px solid rgba(255, 255, 255, .55); border-left: 1.5px solid rgba(255, 255, 255, .55); transform: rotate(45deg); }
+  @keyframes ticker { to { transform: translateX(-50%); } }
 
   /* Sections */
-  section { padding: 72px 0; }
-  .eyebrow { color: #8A6A00; font-weight: 800; font-size: 13px; letter-spacing: 3px; text-transform: uppercase; margin: 0 0 8px; }
-  h2 { font-size: clamp(28px, 4vw, 40px); line-height: 1.1; margin: 0 0 12px; font-weight: 800; text-transform: uppercase; }
-  .lead { color: var(--muted); max-width: 60ch; margin: 0 0 40px; }
+  .section { padding: 104px 0; border-bottom: 1px solid var(--line); }
+  .section-head { margin-bottom: 48px; }
+  .label { display: flex; align-items: center; gap: 14px; margin: 0 0 16px; font-size: 12px; font-weight: 600; letter-spacing: .32em; text-transform: uppercase; color: var(--dim); }
+  .label::after { content: ""; width: 56px; height: 1px; background: var(--line-2); }
+  .section h2 { margin: 0 0 14px; font-size: clamp(28px, 4vw, 46px); font-weight: 600; line-height: 1.12; letter-spacing: .05em; text-transform: uppercase; }
+  .lead { max-width: 60ch; margin: 0; color: var(--muted); font-size: 17px; }
 
   /* Projects */
-  .project { background: var(--white); border-radius: 10px; padding: 24px; margin-bottom: 28px; }
-  .project h3 { margin: 0 0 16px; font-size: 20px; font-weight: 800; }
-  .project h4 { margin: 22px 0 10px; font-size: 13px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); }
-  .project h3 + h4 { margin-top: 0; }
-  .shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
-  figure { margin: 0; position: relative; border-radius: 8px; overflow: hidden; background: var(--ink-2); }
-  figure button { all: unset; cursor: zoom-in; display: block; width: 100%; aspect-ratio: 4 / 3; }
-  figure button:focus-visible { outline: 3px solid var(--yellow); outline-offset: -3px; }
-  figure img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s; }
-  figure button:hover img { transform: scale(1.03); }
-  .tag { position: absolute; top: 10px; left: 10px; padding: 4px 10px; border-radius: 4px; font-size: 11px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; pointer-events: none; }
-  .tag-before { background: var(--ink); color: var(--white); }
-  .tag-during { background: var(--white); color: var(--ink); }
-  .tag-after { background: var(--yellow); color: var(--ink); }
-  .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
-  .gallery figcaption { padding: 10px 12px; background: var(--white); font-weight: 600; font-size: 14px; }
-  @media (max-width: 560px) {
-    .project { padding: 16px; }
-    .shots, .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
-    .tag { top: 6px; left: 6px; font-size: 10px; letter-spacing: 1px; padding: 3px 7px; }
-    .gallery figcaption { font-size: 12px; padding: 8px; }
-  }
+  .project { margin-bottom: 22px; padding: 30px; border: 1px solid var(--line); background: var(--card); }
+  .project-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 16px; }
+  .project h3 { margin: 0; font-size: 22px; font-weight: 600; letter-spacing: .02em; }
+  .project-count { margin: 0; font-size: 11px; font-weight: 600; letter-spacing: .26em; text-transform: uppercase; color: var(--dim); }
+  .project-desc { max-width: 72ch; margin: 8px 0 24px; color: var(--muted); }
+  .project h4 { display: flex; align-items: center; gap: 14px; margin: 28px 0 12px; font-size: 11px; font-weight: 600; letter-spacing: .3em; text-transform: uppercase; color: var(--muted); }
+  .project h4::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+  .project-desc + h4 { margin-top: 0; }
+  .shots, .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; }
+  .shot { position: relative; margin: 0; overflow: hidden; background: var(--card-2); }
+  .shot button { all: unset; display: block; width: 100%; aspect-ratio: 4 / 3; cursor: zoom-in; }
+  .shot button:focus-visible { outline: 2px solid #fff; outline-offset: -2px; }
+  .shot img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+  .shot button:hover img { transform: scale(1.045); }
+  .tag { position: absolute; top: 10px; left: 10px; padding: 5px 9px 4px; font-size: 10px; font-weight: 600; line-height: 1.2; letter-spacing: .22em; text-transform: uppercase; pointer-events: none; }
+  .tag-before { background: rgba(10, 10, 11, .82); color: #fff; outline: 1px solid rgba(255, 255, 255, .35); }
+  .tag-during { background: rgba(58, 60, 66, .92); color: #fff; }
+  .tag-after { background: #fff; color: #0A0A0B; box-shadow: 0 0 14px rgba(255, 255, 255, .5); }
+  .subhead { margin: 72px 0 28px; }
+  .subhead h3 { margin: 0; font-size: 22px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
+  .gallery .shot figcaption { padding: 12px 14px; border-top: 1px solid var(--line); background: var(--card); font-size: 13px; font-weight: 500; letter-spacing: .03em; }
 
   /* Services */
-  .services { background: var(--ink); color: var(--white); }
-  .services .eyebrow { color: var(--yellow); }
-  .services .lead { color: var(--muted-dark); }
-  .service-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 2px; background: var(--ink-2); border: 2px solid var(--ink-2); border-radius: 10px; overflow: hidden; }
-  .service { background: var(--ink); padding: 24px; }
-  .service h3 { margin: 0 0 6px; font-size: 17px; font-weight: 800; }
-  .service h3::before { content: ""; display: block; width: 28px; height: 4px; background: var(--yellow); margin-bottom: 14px; }
-  .service p { margin: 0; color: var(--muted-dark); font-size: 14px; }
+  .services-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+  .service { padding: 30px 28px 34px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); transition: background .3s, box-shadow .3s; }
+  .service:hover { background: var(--card); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .28), 0 0 30px rgba(255, 255, 255, .06); }
+  .service .num { font-size: 12px; font-weight: 600; letter-spacing: .3em; color: var(--dim); }
+  .service h3 { margin: 18px 0 8px; font-size: 15px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
+  .service p { margin: 0; color: var(--muted); font-size: 15px; }
+
+  /* About */
+  .about-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: 72px; align-items: center; }
+  .about-copy p:not(.label) { max-width: 54ch; margin: 0 0 18px; color: var(--muted); font-size: 17px; }
+  .about-copy p.big { color: var(--text); font-size: clamp(20px, 2vw, 24px); font-weight: 500; line-height: 1.45; }
+  .signoff { display: flex; align-items: center; gap: 16px; margin-top: 30px; padding-top: 24px; border-top: 1px solid var(--line); }
+  .signoff .mark { width: 56px; }
+  .signoff b { display: block; font-weight: 600; letter-spacing: .06em; }
+  .signoff span { display: block; font-size: 11px; font-weight: 600; letter-spacing: .26em; text-transform: uppercase; color: var(--dim); }
+  .about-photo { margin: 0; }
+  .about-photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border: 1px solid var(--line); }
+  .about-photo figcaption { margin-top: 12px; font-size: 11px; font-weight: 600; letter-spacing: .26em; text-transform: uppercase; color: var(--dim); }
+
+  /* How it works */
+  .steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0 32px; margin: 0; padding: 0; list-style: none; }
+  .steps li { padding: 28px 0 32px; border-top: 1px solid var(--line-2); }
+  .step-num { font-size: 44px; font-weight: 600; line-height: 1; color: transparent; -webkit-text-stroke: 1px rgba(255, 255, 255, .7); text-shadow: 0 0 18px rgba(255, 255, 255, .15); }
+  .steps h3 { margin: 18px 0 8px; font-size: 15px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
+  .steps p { margin: 0; color: var(--muted); font-size: 15px; }
 
   /* Contact */
-  .contact-card { background: var(--white); border-radius: 10px; padding: 36px; display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: center; }
-  .contact-lines { display: grid; gap: 10px; font-size: 18px; font-weight: 600; }
-  .contact-lines a { text-decoration: none; display: inline-flex; align-items: center; gap: 12px; min-height: 44px; }
-  .contact-lines a:hover { color: #8A6A00; }
-  .contact-lines svg { width: 24px; height: 24px; flex: none; }
-  @media (max-width: 720px) { .contact-card { grid-template-columns: 1fr; padding: 24px; } .contact-lines { font-size: 16px; } }
+  .contact { text-align: center; }
+  .contact .label { justify-content: center; }
+  .contact .label::before { content: ""; width: 56px; height: 1px; background: var(--line-2); }
+  .contact h2 { text-shadow: 0 0 22px rgba(255, 255, 255, .22); }
+  .contact .lead { margin: 0 auto 44px; }
+  .tiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; max-width: 900px; margin: 0 auto; }
+  .tile { display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 38px 20px 34px; border: 1px solid var(--line-2); background: var(--bg-2); text-decoration: none; transition: border-color .25s, box-shadow .25s; }
+  .tile:hover { border-color: #fff; box-shadow: 0 0 28px rgba(255, 255, 255, .18), inset 0 0 22px rgba(255, 255, 255, .05); }
+  .tile .ico { width: 28px; height: 28px; filter: drop-shadow(0 0 6px rgba(255, 255, 255, .5)); }
+  .tile .k { font-size: 11px; font-weight: 600; letter-spacing: .3em; text-transform: uppercase; color: var(--dim); }
+  .tile .v { font-size: clamp(17px, 2.2vw, 24px); font-weight: 600; letter-spacing: .03em; overflow-wrap: anywhere; }
+  .where { margin: 32px 0 0; color: var(--muted); font-size: 14px; letter-spacing: .04em; }
 
-  footer { background: var(--ink); color: var(--muted-dark); font-size: 13px; padding: 28px 0; }
-  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+  /* Footer */
+  .site-footer { padding: 64px 0 44px; color: var(--dim); font-size: 13px; text-align: center; }
+  .site-footer .lockup .mark { width: 110px; }
+  .site-footer .lockup-word { margin-top: 14px; padding-left: .38em; font-size: 10px; letter-spacing: .38em; }
+  .site-footer .lockup-rule { height: 2px; margin-top: 10px; }
+  .foot-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 28px; margin: 36px 0 22px; padding: 0; list-style: none; }
+  .foot-nav a { font-size: 11px; font-weight: 600; letter-spacing: .26em; text-transform: uppercase; text-decoration: none; color: var(--muted); }
+  .foot-nav a:hover { color: #fff; }
+  .site-footer p { margin: 6px 0; }
 
-  /* Lightbox */
-  dialog { border: 0; padding: 0; background: transparent; max-width: 94vw; max-height: 92vh; }
-  dialog::backdrop { background: rgba(10, 11, 12, .9); }
-  dialog img { max-width: 94vw; max-height: 86vh; border-radius: 6px; }
-  dialog p { color: var(--white); text-align: center; font-weight: 600; margin: 10px 0 0; }
-  .close { position: fixed; top: 14px; right: 14px; width: 48px; height: 48px; border-radius: 50%; border: 0; background: var(--white); color: var(--ink); font-size: 26px; line-height: 1; cursor: pointer; }
+  /* Photo viewer */
+  #viewer { width: 100vw; height: 100vh; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: rgba(6, 6, 7, .7); color: #fff; }
+  #viewer[open] { display: flex; align-items: center; justify-content: center; }
+  #viewer::backdrop { background: rgba(6, 6, 7, .92); }
+  .v-stage { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; height: 100%; margin: 0; padding: 64px 84px 40px; }
+  .v-stage img { max-width: 100%; max-height: calc(100% - 44px); object-fit: contain; }
+  .v-meta { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 18px; margin-top: 14px; font-size: 12px; font-weight: 600; letter-spacing: .2em; text-align: center; text-transform: uppercase; color: var(--muted); }
+  #v-count { white-space: nowrap; color: var(--dim); }
+  .vbtn { position: fixed; display: grid; place-items: center; width: 52px; height: 52px; padding: 0; border: 1px solid rgba(255, 255, 255, .45); border-radius: 50%; background: rgba(10, 10, 11, .7); color: #fff; cursor: pointer; transition: border-color .2s, box-shadow .2s; }
+  .vbtn:hover { border-color: #fff; box-shadow: 0 0 18px rgba(255, 255, 255, .3); }
+  .vbtn[hidden] { display: none; }
+  .vbtn .ico { width: 22px; height: 22px; }
+  .v-close { top: 16px; right: 16px; }
+  .v-prev { top: 50%; left: 18px; transform: translateY(-50%); }
+  .v-next { top: 50%; right: 18px; transform: translateY(-50%); }
+
+  /* Scroll-in */
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity .8s ease, transform .8s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+
+  @media (max-width: 900px) {
+    .nav .link { display: none; }
+    .hero { grid-template-columns: 1fr; min-height: 0; }
+    .hero-content { padding: 56px 20px 48px; }
+    .hero-photo { height: 62vw; min-height: 260px; max-height: 520px; }
+    .hero-photo::after { background: linear-gradient(180deg, var(--bg) 0%, rgba(10, 10, 11, .35) 14%, rgba(10, 10, 11, 0) 32%); }
+    .services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .about-grid { grid-template-columns: 1fr; gap: 40px; }
+    .about-photo img { aspect-ratio: 4 / 3; }
+    .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 640px) {
+    .tiles { grid-template-columns: 1fr; }
+    .v-stage { padding: 64px 12px 96px; }
+    .v-meta { font-size: 11px; letter-spacing: .12em; }
+    .v-prev, .v-next { top: auto; bottom: 22px; transform: none; }
+    .v-prev { left: calc(50% - 64px); }
+    .v-next { right: calc(50% - 64px); }
+  }
+  @media (max-width: 560px) {
+    .wrap { padding: 0 16px; }
+    .section { padding: 72px 0; }
+    .project { padding: 18px 16px; }
+    .project h3 { font-size: 19px; }
+    .shots, .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+    .tag { top: 6px; left: 6px; padding: 4px 6px 3px; font-size: 9px; letter-spacing: .14em; }
+    .gallery .shot figcaption { padding: 9px 10px; font-size: 12px; }
+    .services-grid { grid-template-columns: 1fr; }
+    .service { padding: 22px 20px 26px; }
+    .steps { grid-template-columns: 1fr; }
+    .steps li { padding: 22px 0 26px; }
+    .hero .lockup .mark { width: 180px; }
+    .hero .lockup-word { margin-top: 18px; padding-left: .32em; font-size: 12px; letter-spacing: .32em; }
+    .intro { font-size: 16px; }
+    .stats dt { font-size: 9px; letter-spacing: .18em; }
+    .stats dd { font-size: 13px; letter-spacing: .02em; }
+  }
+  @media (max-width: 420px) {
+    .bar { padding: 10px 16px; }
+    .brand { gap: 10px; }
+    .brand .mark { width: 42px; }
+    .brand-text b { font-size: 10.5px; letter-spacing: .1em; }
+    .brand-text span { font-size: 9.5px; letter-spacing: .2em; }
+    .btn-call { width: 44px; padding: 0; }
+    .btn-call .label-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .ticker-track { animation: none; }
+    .shot img, .reveal { transition: none; }
+  }
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <path id="sf" d="M879.8 163.4L1246 375L1162 375L875.6 217.5L431.7 408.5A50 50 0 0 0 401.5 454.5A40 40 0 0 0 441.5 494.5L655 494.5A109.5 109.5 0 0 1 655 713.5L322.5 713.5L357 664.5L655 664.5A60.5 60.5 0 0 0 655 543.5L427 543.5A83 83 0 0 1 344 460.5A101 101 0 0 1 405.1 367.5ZM815 413.5L1162.5 413.5L1153.8 464.5L873 464.5L873 541.5L1111.5 541.5L1103.2 590.5L873 590.5L873 713.5L815 713.5Z"/>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+  </defs>
+</svg>
 
-<header>
+<a class="skip" href="#work">Skip to the work</a>
+
+<header class="site-header">
   <div class="bar">
-    <a class="brand" href="#top" aria-label="SF Building &amp; Carpentry, home">
-      <svg viewBox="0 0 200 200" aria-hidden="true">
-        <polyline points="10,92 100,20 190,92" fill="none" stroke="#F2B705" stroke-width="14" stroke-linecap="square" stroke-linejoin="miter"/>
-        <polygon points="40,86 94,42.8 94,57.8 52,91.4 52,116 94,116 94,180 40,180 40,168 82,168 82,128 40,128" fill="#FFFFFF"/>
-        <polygon points="106,42.8 160,86 160,101 118,67.4 118,116 150,116 150,128 118,128 118,180 106,180" fill="#FFFFFF"/>
-        <line x1="10" y1="190" x2="190" y2="190" stroke="#F2B705" stroke-width="5"/>
-      </svg>
-      <div class="brand-name">Building &amp; Carpentry<span>Stuart Freeth</span></div>
+    <a class="brand" href="#top" aria-label="SF Building &amp; Carpentry, back to top">
+      <svg class="mark glow-sm" viewBox="322 162 925 553" fill="currentColor" aria-hidden="true"><use href="#sf"/></svg>
+      <span class="brand-text"><b>Building &amp; Carpentry</b><span>Stuart Freeth</span></span>
     </a>
-    <nav aria-label="Main">
-      <a class="link" href="#work">Our work</a>
+    <nav class="nav" aria-label="Main">
+      <a class="link" href="#work">Work</a>
       <a class="link" href="#services">Services</a>
-      <a class="btn btn-yellow" href="tel:+447484258141">Call</a>
+      <a class="link" href="#about">About</a>
+      <a class="link" href="#contact">Contact</a>
+      <a class="btn btn-line btn-sm btn-call" href="tel:+447484258141">
+        <svg class="ico" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-phone"/></svg>
+        <span class="label-text">Call</span>
+      </a>
     </nav>
   </div>
 </header>
 
 <main id="top">
-  <div class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <h1>Building &amp; carpentry <em>across Cornwall</em></h1>
-        <p>I'm Stuart Freeth, a general builder with 6 years of experience — from shepherd's huts, garages and porches to full flat renovations. Based in Truro, with a yard on the Roseland.</p>
-        <div class="hero-actions">
-          <a class="btn btn-yellow" href="tel:+447484258141">07484 258141</a>
-          <a class="btn btn-ghost" href="#work">See the work</a>
-        </div>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-content">
+      <div class="lockup" role="img" aria-label="SF Building &amp; Carpentry logo">
+        <svg class="mark glow" viewBox="289 162 958 553" fill="currentColor" aria-hidden="true"><use href="#sf"/></svg>
+        <span class="lockup-word" aria-hidden="true">Building &amp; Carpentry</span>
+        <span class="lockup-rule" aria-hidden="true"></span>
       </div>
-      <div class="hero-photo">
-        <img src="images/projects/shepherds-hut/after-1.jpg" alt="Finished navy shepherd's hut with oak doors and steps, set in a wildflower garden" width="1036" height="1255">
+      <h1 id="hero-title">Renovations &amp; extensions across Cornwall</h1>
+      <p class="intro">I'm Stuart Freeth, a general builder with 6 years of experience in renovations and extensions. Based in Truro, with a yard on the Roseland.</p>
+      <div class="actions">
+        <a class="btn btn-solid" href="tel:+447484258141">
+          <svg class="ico" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-phone"/></svg>
+          07484 258141
+        </a>
+        <a class="btn btn-line" href="#work">See the work</a>
       </div>
+      <dl class="stats">
+        <div><dt>Experience</dt><dd>6 years</dd></div>
+        <div><dt>Based in</dt><dd>Truro</dd></div>
+        <div><dt>Yard</dt><dd>The Roseland</dd></div>
+      </dl>
+    </div>
+    <div class="hero-photo">
+      <img src="images/projects/shepherds-hut/after-1.jpg" alt="A finished navy shepherd's hut with hardwood doors and steps, set in a wildflower garden" fetchpriority="high">
+    </div>
+  </section>
+
+  <div class="ticker" aria-label="Services">
+    <div class="ticker-track">
+      <ul>
+        <li>Renovations</li><li>Extensions</li><li>First fix carpentry</li><li>Second fix carpentry</li><li>Concreting</li><li>Groundworks</li><li>Rendering</li><li>Stonework</li><li>Fencing &amp; gates</li>
+      </ul>
+      <ul aria-hidden="true">
+        <li>Renovations</li><li>Extensions</li><li>First fix carpentry</li><li>Second fix carpentry</li><li>Concreting</li><li>Groundworks</li><li>Rendering</li><li>Stonework</li><li>Fencing &amp; gates</li>
+      </ul>
     </div>
   </div>
 
-  <section id="work">
+  <section class="section" id="work" aria-labelledby="work-title">
     <div class="wrap">
-      <p class="eyebrow">Recent projects</p>
-      <h2>Before &amp; after</h2>
-      <p class="lead">A few jobs from start to finish. Tap any photo to see it full size.</p>
+      <div class="section-head" data-reveal>
+        <p class="label">01 / Work</p>
+        <h2 id="work-title">Recent projects</h2>
+        <p class="lead">Before, during and after shots from recent jobs. Tap any photo to see it full size.</p>
+      </div>
       <div id="projects"></div>
+      <div class="subhead" data-reveal>
+        <p class="label">More work</p>
+        <h3>Stonework, carpentry &amp; groundworks</h3>
+      </div>
+      <div class="gallery" id="gallery-grid"></div>
     </div>
   </section>
 
-  <section id="gallery" style="padding-top:0">
+  <section class="section" id="services" aria-labelledby="services-title">
     <div class="wrap">
-      <p class="eyebrow">More work</p>
-      <h2>Stonework, carpentry &amp; groundworks</h2>
-      <p class="lead">Stonework, Cornish hedging, gates, doors, fencing and groundworks.</p>
-      <div class="gallery" id="more"></div>
-    </div>
-  </section>
-
-  <section class="services" id="services">
-    <div class="wrap">
-      <p class="eyebrow">What I do</p>
-      <h2>Services</h2>
-      <p class="lead">One builder from groundworks to the finishing joinery.</p>
-      <div class="service-grid">
-        <div class="service"><h3>Renovations</h3><p>Kitchens, bathrooms, hallways and full flat refurbishments.</p></div>
-        <div class="service"><h3>Carpentry &amp; joinery</h3><p>Garden gates, barn doors, balconies, steps and timber framing.</p></div>
-        <div class="service"><h3>Outbuildings</h3><p>Garages, workshops and shepherd's huts, built from the ground up.</p></div>
-        <div class="service"><h3>Walls &amp; rendering</h3><p>Blockwork, rendered garden walls and Cornish hedge stonework.</p></div>
-        <div class="service"><h3>Fencing</h3><p>Closeboard and stock fencing for gardens, lanes and fields.</p></div>
-        <div class="service"><h3>Groundworks &amp; drainage</h3><p>Trenching, drainage runs and site prep with my own mini digger.</p></div>
+      <div class="section-head" data-reveal>
+        <p class="label">02 / Services</p>
+        <h2 id="services-title">What I do</h2>
+        <p class="lead">From the groundworks and concrete through to the finishing carpentry.</p>
+      </div>
+      <div class="services-grid" data-reveal>
+        <div class="service"><span class="num">01</span><h3>Renovations</h3><p>Kitchens, bathrooms, hallways and full refurbishments of houses and flats.</p></div>
+        <div class="service"><span class="num">02</span><h3>Extensions</h3><p>Extensions and porches, from the foundations to the finishing touches.</p></div>
+        <div class="service"><span class="num">03</span><h3>First fix carpentry</h3><p>Stud walls, floor and roof joists, timber framing and structural timberwork.</p></div>
+        <div class="service"><span class="num">04</span><h3>Second fix carpentry</h3><p>Doors, skirting, architrave, kitchen fitting and built-in storage.</p></div>
+        <div class="service"><span class="num">05</span><h3>Concreting</h3><p>Foundations, slabs, bases, paths and driveways.</p></div>
+        <div class="service"><span class="num">06</span><h3>Groundworks &amp; drainage</h3><p>Trenching, drainage runs and site prep, with my own mini digger.</p></div>
+        <div class="service"><span class="num">07</span><h3>Walls, render &amp; stonework</h3><p>Blockwork, rendering, stonework and Cornish hedging.</p></div>
+        <div class="service"><span class="num">08</span><h3>Outbuildings &amp; joinery</h3><p>Garages, workshops, barn doors, balconies and steps.</p></div>
+        <div class="service"><span class="num">09</span><h3>Fencing &amp; gates</h3><p>Closeboard fencing and made-to-measure timber gates.</p></div>
       </div>
     </div>
   </section>
 
-  <section id="contact">
-    <div class="wrap">
-      <p class="eyebrow">Get in touch</p>
-      <h2>Talk about your job</h2>
-      <p class="lead">Call or email with what you have in mind and I'll get back to you.</p>
-      <div class="contact-card">
-        <div class="contact-lines">
-          <a href="tel:+447484258141">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            07484 258141
-          </a>
-          <a href="mailto:freethstuart@gmail.com">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg>
-            freethstuart@gmail.com
-          </a>
-          <span style="display:inline-flex;align-items:center;gap:12px;min-height:44px">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
-            Based in Truro · yard on the Roseland
-          </span>
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="wrap about-grid" data-reveal>
+      <div class="about-copy">
+        <p class="label">03 / About</p>
+        <h2 id="about-title">A builder you deal with directly</h2>
+        <p class="big">I'm Stuart Freeth, a general builder based in Truro with a yard on the Roseland.</p>
+        <p>I've spent the last 6 years on residential building work across Cornwall, mostly renovations and extensions, along with carpentry, concreting and groundworks.</p>
+        <p>When you get in touch, you deal with me directly, from the first site visit to the finished job.</p>
+        <div class="signoff">
+          <svg class="mark glow-sm" viewBox="322 162 925 553" fill="currentColor" aria-hidden="true"><use href="#sf"/></svg>
+          <div><b>Stuart Freeth</b><span>SF Building &amp; Carpentry</span></div>
         </div>
-        <a class="btn btn-yellow" href="tel:+447484258141">Call now</a>
       </div>
+      <figure class="about-photo">
+        <img src="images/projects/shepherds-hut/during-steps.jpg" alt="Handmade hardwood steps with through-tenon joints" loading="lazy">
+        <figcaption>Handmade hardwood steps</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" id="process" aria-labelledby="process-title">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="label">04 / How it works</p>
+        <h2 id="process-title">From first call to finished job</h2>
+      </div>
+      <ol class="steps" data-reveal>
+        <li><span class="step-num" aria-hidden="true">01</span><h3>Get in touch</h3><p>Call or email with a rough idea of the job and where it is.</p></li>
+        <li><span class="step-num" aria-hidden="true">02</span><h3>Site visit</h3><p>I'll come and look at the job, talk it through with you and take measurements.</p></li>
+        <li><span class="step-num" aria-hidden="true">03</span><h3>Quote</h3><p>You get a clear written quote, so you know where you stand before work starts.</p></li>
+        <li><span class="step-num" aria-hidden="true">04</span><h3>The build</h3><p>I get the job done properly and keep you updated along the way.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div data-reveal>
+        <p class="label">05 / Contact</p>
+        <h2 id="contact-title">Tell me about your project</h2>
+        <p class="lead">Call or email with what you have in mind and I'll get back to you.</p>
+      </div>
+      <div class="tiles" data-reveal>
+        <a class="tile" href="tel:+447484258141">
+          <svg class="ico" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-phone"/></svg>
+          <span class="k">Call</span>
+          <span class="v">07484 258141</span>
+        </a>
+        <a class="tile" href="mailto:freethstuart@gmail.com?subject=Building%20enquiry">
+          <svg class="ico" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-mail"/></svg>
+          <span class="k">Email</span>
+          <span class="v">freethstuart@gmail.com</span>
+        </a>
+      </div>
+      <p class="where">Based in Truro, with a yard on the Roseland. Working across Cornwall.</p>
     </div>
   </section>
 </main>
 
-<footer>
+<footer class="site-footer">
   <div class="wrap">
-    <span>SF Building &amp; Carpentry is the trading name of Stuart Freeth.</span>
-    <span>Based in Truro, with a yard on the Roseland</span>
+    <div class="lockup" role="img" aria-label="SF Building &amp; Carpentry logo">
+      <svg class="mark glow-sm" viewBox="289 162 958 553" fill="currentColor" aria-hidden="true"><use href="#sf"/></svg>
+      <span class="lockup-word" aria-hidden="true">Building &amp; Carpentry</span>
+      <span class="lockup-rule" aria-hidden="true"></span>
+    </div>
+    <ul class="foot-nav">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <p>SF Building &amp; Carpentry is the trading name of Stuart Freeth.</p>
+    <p>© 2026 Stuart Freeth · Truro, Cornwall</p>
   </div>
 </footer>
 
 <dialog id="viewer" aria-label="Photo viewer">
-  <button class="close" id="close" aria-label="Close photo">×</button>
-  <img id="viewer-img" alt="">
-  <p id="viewer-cap"></p>
+  <figure class="v-stage">
+    <img id="v-img" alt="">
+    <figcaption class="v-meta"><span id="v-cap"></span><span id="v-count"></span></figcaption>
+  </figure>
+  <button class="vbtn v-close" id="v-close" type="button" aria-label="Close photo">
+    <svg class="ico" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><use href="#i-close"/></svg>
+  </button>
+  <button class="vbtn v-prev" id="v-prev" type="button" aria-label="Previous photo">
+    <svg class="ico" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-left"/></svg>
+  </button>
+  <button class="vbtn v-next" id="v-next" type="button" aria-label="Next photo">
+    <svg class="ico" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-right"/></svg>
+  </button>
 </dialog>
 
 <script>
-  // Photos are listed in images/photos.json — add new files there and they appear here.
+(() => {
+  'use strict';
+  // Projects and photos are listed in images/photos.json. Grids show the small copies in
+  // images/thumbs/ (made by tools/make_thumbs.py); the viewer opens the full-size photo.
+
+  // Fade sections in as they scroll into view (only when JS runs, so nothing stays hidden without it)
+  const reduceMotion = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const io = ('IntersectionObserver' in window && !reduceMotion)
+    ? new IntersectionObserver((entries) => entries.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      }), { rootMargin: '0px 0px -6% 0px', threshold: 0.05 })
+    : null;
+  const reveal = (node) => { if (io) { node.classList.add('reveal'); io.observe(node); } };
+  document.querySelectorAll('[data-reveal]').forEach(reveal);
+
+  const el = (tag, cls, text) => {
+    const n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  };
+
+  // Photo viewer
   const viewer = document.getElementById('viewer');
-  const vImg = document.getElementById('viewer-img');
-  const vCap = document.getElementById('viewer-cap');
-  document.getElementById('close').addEventListener('click', () => viewer.close());
-  viewer.addEventListener('click', e => { if (e.target === viewer) viewer.close(); });
+  const vImg = document.getElementById('v-img');
+  const vCap = document.getElementById('v-cap');
+  const vCount = document.getElementById('v-count');
+  const vPrev = document.getElementById('v-prev');
+  const vNext = document.getElementById('v-next');
+  let vList = [];
+  let vIdx = 0;
 
-  function shot(src, alt, tag) {
-    const fig = document.createElement('figure');
-    const btn = document.createElement('button');
-    btn.setAttribute('aria-label', 'View larger: ' + alt);
-    const img = document.createElement('img');
-    img.src = src; img.alt = alt; img.loading = 'lazy';
-    btn.appendChild(img);
-    btn.addEventListener('click', () => { vImg.src = src; vImg.alt = alt; vCap.textContent = alt; viewer.showModal(); });
-    fig.appendChild(btn);
-    if (tag) {
-      const t = document.createElement('span');
-      t.className = 'tag tag-' + tag; t.textContent = tag;
-      fig.appendChild(t);
-    }
-    return fig;
-  }
-
-  fetch('images/photos.json').then(r => r.json()).then(data => {
-    const projects = document.getElementById('projects');
-    data.projects.forEach(p => {
-      const card = document.createElement('article');
-      card.className = 'project';
-      const h = document.createElement('h3'); h.textContent = p.title; card.appendChild(h);
-      // A project can be one set of photos, or split into rooms (e.g. the flat renovation)
-      (p.rooms || [p]).forEach(group => {
-        if (p.rooms) {
-          const h4 = document.createElement('h4'); h4.textContent = group.name; card.appendChild(h4);
-        }
-        const label = p.rooms ? `${p.title}, ${group.name.toLowerCase()}` : p.title;
-        const grid = document.createElement('div'); grid.className = 'shots';
-        ['before', 'during', 'after'].forEach(stage => {
-          (group[stage] || []).forEach(file => {
-            grid.appendChild(shot(`images/projects/${p.slug}/${file}`, `${label} — ${stage}`, stage));
-          });
-        });
-        card.appendChild(grid);
-      });
-      projects.appendChild(card);
-    });
-    const more = document.getElementById('more');
-    data.gallery.forEach(g => {
-      const fig = shot(`images/gallery/${g.file}`, g.title);
-      const cap = document.createElement('figcaption'); cap.textContent = g.title;
-      fig.appendChild(cap);
-      more.appendChild(fig);
-    });
+  const show = (i) => {
+    vIdx = (i + vList.length) % vList.length;
+    const it = vList[vIdx];
+    vImg.src = it.src;
+    vImg.alt = it.alt;
+    vCap.textContent = it.caption;
+    const many = vList.length > 1;
+    vCount.textContent = many ? (vIdx + 1) + ' / ' + vList.length : '';
+    vPrev.hidden = !many;
+    vNext.hidden = !many;
+    if (many) new Image().src = vList[(vIdx + 1) % vList.length].src;
+  };
+  const openViewer = (items, i) => {
+    vList = items;
+    show(i);
+    document.documentElement.classList.add('lock');
+    if (typeof viewer.showModal === 'function') viewer.showModal(); else viewer.setAttribute('open', '');
+  };
+  const closeViewer = () => {
+    if (typeof viewer.close === 'function') viewer.close(); else viewer.removeAttribute('open');
+    document.documentElement.classList.remove('lock');
+  };
+  viewer.addEventListener('close', () => document.documentElement.classList.remove('lock'));
+  document.getElementById('v-close').addEventListener('click', closeViewer);
+  vPrev.addEventListener('click', () => show(vIdx - 1));
+  vNext.addEventListener('click', () => show(vIdx + 1));
+  viewer.addEventListener('click', (e) => {
+    if (e.target === viewer || e.target.classList.contains('v-stage')) closeViewer();
   });
+  viewer.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') { e.preventDefault(); show(vIdx - 1); }
+    else if (e.key === 'ArrowRight') { e.preventDefault(); show(vIdx + 1); }
+  });
+  let touchX = null;
+  viewer.addEventListener('touchstart', (e) => { touchX = e.touches[0].clientX; }, { passive: true });
+  viewer.addEventListener('touchend', (e) => {
+    if (touchX === null) return;
+    const dx = e.changedTouches[0].clientX - touchX;
+    touchX = null;
+    if (Math.abs(dx) > 50 && vList.length > 1) show(vIdx + (dx < 0 ? 1 : -1));
+  });
+
+  // Photo tiles
+  const thumb = (src) => src.replace(/^images\//, 'images/thumbs/');
+  const tile = (items, i, withTag) => {
+    const it = items[i];
+    const fig = el('figure', 'shot');
+    const btn = el('button');
+    btn.type = 'button';
+    btn.setAttribute('aria-label', 'View larger: ' + it.alt);
+    const img = el('img');
+    img.alt = it.alt;
+    img.loading = 'lazy';
+    img.decoding = 'async';
+    const fallback = () => { img.removeEventListener('error', fallback); img.src = it.src; };
+    img.addEventListener('error', fallback);
+    img.src = thumb(it.src);
+    btn.appendChild(img);
+    btn.addEventListener('click', () => openViewer(items, i));
+    fig.appendChild(btn);
+    if (withTag) fig.appendChild(el('span', 'tag tag-' + it.stage, it.stage));
+    return fig;
+  };
+
+  const STAGES = ['before', 'during', 'after'];
+  const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+
+  fetch('images/photos.json')
+    .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then((data) => {
+      const host = document.getElementById('projects');
+      data.projects.forEach((p) => {
+        // A project is one set of photos, or split into rooms (like the flat renovation)
+        const groups = p.rooms || [p];
+        const items = [];
+        groups.forEach((g) => STAGES.forEach((stage) => (g[stage] || []).forEach((file) => {
+          const where = p.rooms ? p.title + ', ' + g.name.toLowerCase() : p.title;
+          items.push({ src: 'images/projects/' + p.slug + '/' + file, alt: where + ' (' + stage + ')', caption: where + ' · ' + cap(stage), stage, group: g });
+        })));
+
+        const card = el('article', 'project');
+        const head = el('div', 'project-head');
+        head.appendChild(el('h3', null, p.title));
+        head.appendChild(el('p', 'project-count', items.length + (items.length === 1 ? ' photo' : ' photos')));
+        card.appendChild(head);
+        if (p.description) card.appendChild(el('p', 'project-desc', p.description));
+        groups.forEach((g) => {
+          if (p.rooms) card.appendChild(el('h4', null, g.name));
+          const grid = el('div', 'shots');
+          items.forEach((it, i) => { if (it.group === g) grid.appendChild(tile(items, i, true)); });
+          card.appendChild(grid);
+        });
+        host.appendChild(card);
+        reveal(card);
+      });
+
+      const gallery = document.getElementById('gallery-grid');
+      const gItems = data.gallery.map((g) => ({ src: 'images/gallery/' + g.file, alt: g.title, caption: g.title }));
+      gItems.forEach((it, i) => {
+        const fig = tile(gItems, i, false);
+        fig.appendChild(el('figcaption', null, it.caption));
+        gallery.appendChild(fig);
+      });
+    })
+    .catch(() => {
+      document.getElementById('projects').appendChild(el('p', 'lead', 'The photos could not load just now. Please refresh the page.'));
+    });
+})();
 </script>
 </body>
 </html>

@@ -3,6 +3,7 @@
     {
       "slug": "shepherds-hut",
       "title": "Shepherd's hut build",
+      "description": "Framed, clad and fitted out: corrugated steel cladding, hardwood doors and steps, a tongue-and-groove interior, kitchen, shower room and bedroom.",
       "during": [
         "during-1.jpg",
         "during-cladding.jpg",
@@ -22,6 +23,7 @@
     {
       "slug": "flat",
       "title": "Flat renovation",
+      "description": "A full refresh: new kitchen, retiled bathroom, new flooring and doors, and a panelled coat and shoe nook in the hallway.",
       "rooms": [
         {
           "name": "Kitchen",
@@ -62,6 +64,7 @@
     {
       "slug": "balcony",
       "title": "Balcony balustrade",
+      "description": "New timber posts, rails and capping built around the original decorative ironwork panels.",
       "before": [
         "before.jpg"
       ],
@@ -73,6 +76,7 @@
     {
       "slug": "porch",
       "title": "Entrance porch",
+      "description": "A new porch framed up, sheathed and rendered, with a new front door and window.",
       "during": [
         "during.jpg"
       ],
@@ -83,6 +87,7 @@
     {
       "slug": "garage-rebuild",
       "title": "Garage rebuild",
+      "description": "The old block garage replaced with a new timber-framed building, rendered and clad, under a new roof.",
       "before": [
         "before.jpg"
       ],
@@ -96,6 +101,7 @@
     {
       "slug": "repairs",
       "title": "Roof & chimney repairs",
+      "description": "A roof opened up to replace rotten timbers, and a chimney stack ready for repair.",
       "before": [
         "chimney-before.jpg"
       ],
@@ -106,6 +112,7 @@
     {
       "slug": "rendered-walls",
       "title": "Rendered garden walls",
+      "description": "New retaining walls and steps, built and rendered.",
       "before": [
         "before.jpg"
       ],
