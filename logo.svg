@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="SF Building &amp; Carpentry">
+<rect width="200" height="200" rx="28" fill="#17191C"/>
+<polyline points="10,92 100,20 190,92" fill="none" stroke="#F2B705" stroke-width="14" stroke-linecap="square" stroke-linejoin="miter"/>
+<polygon points="40,86 94,42.8 94,57.8 52,91.4 52,116 94,116 94,180 40,180 40,168 82,168 82,128 40,128" fill="#FFFFFF"/>
+<polygon points="106,42.8 160,86 160,101 118,67.4 118,116 150,116 150,128 118,128 118,180 106,180" fill="#FFFFFF"/>
+<line x1="10" y1="190" x2="190" y2="190" stroke="#F2B705" stroke-width="5"/>
+</svg>

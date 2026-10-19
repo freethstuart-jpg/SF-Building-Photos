@@ -1,0 +1,91 @@
+{
+  "projects": [
+    {
+      "slug": "rendered-walls",
+      "title": "Rendered garden walls",
+      "before": [
+        "before.jpg"
+      ],
+      "after": [
+        "after-1.jpg",
+        "after-2.jpg"
+      ]
+    },
+    {
+      "slug": "kitchen",
+      "title": "Kitchen renovation",
+      "before": [
+        "before.jpg"
+      ],
+      "after": [
+        "after.jpg"
+      ]
+    },
+    {
+      "slug": "bathroom",
+      "title": "Bathroom renovation",
+      "before": [
+        "before.jpg"
+      ],
+      "after": [
+        "after.jpg"
+      ]
+    },
+    {
+      "slug": "shepherds-hut",
+      "title": "Shepherd's hut build",
+      "during": [
+        "during-1.jpg",
+        "during-2.jpg"
+      ],
+      "after": [
+        "after-1.jpg",
+        "after-2.jpg",
+        "after-3.jpg"
+      ]
+    },
+    {
+      "slug": "garage-rebuild",
+      "title": "Garage rebuild",
+      "before": [
+        "before.jpg"
+      ],
+      "during": [
+        "during.jpg"
+      ],
+      "after": [
+        "after.jpg"
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "file": "cornish-hedge.jpg",
+      "title": "Cornish hedge stonework"
+    },
+    {
+      "file": "groundworks-trench.jpg",
+      "title": "Groundworks"
+    },
+    {
+      "file": "barn-doors.jpg",
+      "title": "Barn doors"
+    },
+    {
+      "file": "oak-porch.jpg",
+      "title": "Oak-framed porch"
+    },
+    {
+      "file": "closeboard-fence.jpg",
+      "title": "Closeboard fencing"
+    },
+    {
+      "file": "garden-gate-painted.jpg",
+      "title": "Painted garden gate"
+    },
+    {
+      "file": "garden-gate-timber.jpg",
+      "title": "Timber garden gate"
+    }
+  ]
+}

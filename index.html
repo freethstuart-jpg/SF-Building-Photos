@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SF Building &amp; Carpentry · Stuart Freeth · Truro, Cornwall</title>
+<meta name="description" content="SF Building & Carpentry — building, carpentry and renovation work by Stuart Freeth, based in Truro, Cornwall.">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #17191C;
+    --ink-2: #2A2D31;
+    --paper: #F5F4F0;
+    --white: #FFFFFF;
+    --yellow: #F2B705;
+    --muted: #5B5F66;
+    --muted-dark: #B9BCC2;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font-family: 'Montserrat', system-ui, sans-serif; color: var(--ink); background: var(--paper); line-height: 1.55; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 20px; }
+
+  /* Header */
+  header { background: var(--ink); color: var(--white); position: sticky; top: 0; z-index: 10; }
+  .bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 20px; max-width: 1160px; margin: 0 auto; }
+  .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+  .brand svg { width: 44px; height: 44px; flex: none; }
+  .brand-name { font-weight: 800; font-size: 15px; letter-spacing: .5px; text-transform: uppercase; line-height: 1.2; }
+  .brand-name span { display: block; color: var(--yellow); font-weight: 600; font-size: 11px; letter-spacing: 3px; }
+  nav { display: flex; align-items: center; gap: 22px; font-weight: 600; font-size: 14px; }
+  nav a { text-decoration: none; }
+  nav a:hover { color: var(--yellow); }
+  .btn { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: 6px; font-weight: 800; font-size: 14px; text-decoration: none; text-transform: uppercase; letter-spacing: .5px; }
+  .btn-yellow { background: var(--yellow); color: var(--ink); }
+  .btn-yellow:hover { background: #FFC81F; }
+  .btn-ghost { border: 2px solid var(--white); color: var(--white); }
+  .btn-ghost:hover { background: var(--white); color: var(--ink); }
+  @media (max-width: 720px) { nav .link { display: none; } nav { gap: 10px; } .brand-name { font-size: 13px; } }
+
+  /* Hero */
+  .hero { background: var(--ink); color: var(--white); padding: 56px 0 64px; }
+  .hero-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 48px; align-items: center; }
+  .hero h1 { font-size: clamp(34px, 5.4vw, 60px); line-height: 1.05; margin: 0 0 18px; font-weight: 800; text-transform: uppercase; letter-spacing: -.5px; }
+  .hero h1 em { font-style: normal; color: var(--yellow); }
+  .hero p { color: var(--muted-dark); font-size: 17px; max-width: 46ch; margin: 0 0 28px; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .hero-photo { border-radius: 10px; overflow: hidden; aspect-ratio: 4 / 3; }
+  .hero-photo img { width: 100%; height: 100%; object-fit: cover; }
+  @media (max-width: 860px) { .hero-grid { grid-template-columns: 1fr; gap: 32px; } .hero { padding: 36px 0 44px; } }
+
+  /* Sections */
+  section { padding: 72px 0; }
+  .eyebrow { color: #8A6A00; font-weight: 800; font-size: 13px; letter-spacing: 3px; text-transform: uppercase; margin: 0 0 8px; }
+  h2 { font-size: clamp(28px, 4vw, 40px); line-height: 1.1; margin: 0 0 12px; font-weight: 800; text-transform: uppercase; }
+  .lead { color: var(--muted); max-width: 60ch; margin: 0 0 40px; }
+
+  /* Projects */
+  .project { background: var(--white); border-radius: 10px; padding: 24px; margin-bottom: 28px; }
+  .project h3 { margin: 0 0 16px; font-size: 20px; font-weight: 800; }
+  .shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
+  figure { margin: 0; position: relative; border-radius: 8px; overflow: hidden; background: var(--ink-2); }
+  figure button { all: unset; cursor: zoom-in; display: block; width: 100%; aspect-ratio: 4 / 3; }
+  figure button:focus-visible { outline: 3px solid var(--yellow); outline-offset: -3px; }
+  figure img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s; }
+  figure button:hover img { transform: scale(1.03); }
+  .tag { position: absolute; top: 10px; left: 10px; padding: 4px 10px; border-radius: 4px; font-size: 11px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; pointer-events: none; }
+  .tag-before { background: var(--ink); color: var(--white); }
+  .tag-during { background: var(--white); color: var(--ink); }
+  .tag-after { background: var(--yellow); color: var(--ink); }
+  .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+  .gallery figcaption { padding: 10px 12px; background: var(--white); font-weight: 600; font-size: 14px; }
+  @media (max-width: 560px) {
+    .project { padding: 16px; }
+    .shots, .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .tag { top: 6px; left: 6px; font-size: 10px; letter-spacing: 1px; padding: 3px 7px; }
+    .gallery figcaption { font-size: 12px; padding: 8px; }
+  }
+
+  /* Services */
+  .services { background: var(--ink); color: var(--white); }
+  .services .eyebrow { color: var(--yellow); }
+  .services .lead { color: var(--muted-dark); }
+  .service-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 2px; background: var(--ink-2); border: 2px solid var(--ink-2); border-radius: 10px; overflow: hidden; }
+  .service { background: var(--ink); padding: 24px; }
+  .service h3 { margin: 0 0 6px; font-size: 17px; font-weight: 800; }
+  .service h3::before { content: ""; display: block; width: 28px; height: 4px; background: var(--yellow); margin-bottom: 14px; }
+  .service p { margin: 0; color: var(--muted-dark); font-size: 14px; }
+
+  /* Contact */
+  .contact-card { background: var(--white); border-radius: 10px; padding: 36px; display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: center; }
+  .contact-lines { display: grid; gap: 10px; font-size: 18px; font-weight: 600; }
+  .contact-lines a { text-decoration: none; display: inline-flex; align-items: center; gap: 12px; min-height: 44px; }
+  .contact-lines a:hover { color: #8A6A00; }
+  .contact-lines svg { width: 24px; height: 24px; flex: none; }
+  @media (max-width: 720px) { .contact-card { grid-template-columns: 1fr; padding: 24px; } .contact-lines { font-size: 16px; } }
+
+  footer { background: var(--ink); color: var(--muted-dark); font-size: 13px; padding: 28px 0; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+
+  /* Lightbox */
+  dialog { border: 0; padding: 0; background: transparent; max-width: 94vw; max-height: 92vh; }
+  dialog::backdrop { background: rgba(10, 11, 12, .9); }
+  dialog img { max-width: 94vw; max-height: 86vh; border-radius: 6px; }
+  dialog p { color: var(--white); text-align: center; font-weight: 600; margin: 10px 0 0; }
+  .close { position: fixed; top: 14px; right: 14px; width: 48px; height: 48px; border-radius: 50%; border: 0; background: var(--white); color: var(--ink); font-size: 26px; line-height: 1; cursor: pointer; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a class="brand" href="#top" aria-label="SF Building &amp; Carpentry, home">
+      <svg viewBox="0 0 200 200" aria-hidden="true">
+        <polyline points="10,92 100,20 190,92" fill="none" stroke="#F2B705" stroke-width="14" stroke-linecap="square" stroke-linejoin="miter"/>
+        <polygon points="40,86 94,42.8 94,57.8 52,91.4 52,116 94,116 94,180 40,180 40,168 82,168 82,128 40,128" fill="#FFFFFF"/>
+        <polygon points="106,42.8 160,86 160,101 118,67.4 118,116 150,116 150,128 118,128 118,180 106,180" fill="#FFFFFF"/>
+        <line x1="10" y1="190" x2="190" y2="190" stroke="#F2B705" stroke-width="5"/>
+      </svg>
+      <div class="brand-name">Building &amp; Carpentry<span>Stuart Freeth</span></div>
+    </a>
+    <nav aria-label="Main">
+      <a class="link" href="#work">Our work</a>
+      <a class="link" href="#services">Services</a>
+      <a class="btn btn-yellow" href="tel:+447484258141">Call</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Building &amp; carpentry <em>across Cornwall</em></h1>
+        <p>From garages and garden walls to kitchens, bathrooms and shepherd's huts — built properly by Stuart Freeth, based in Truro.</p>
+        <div class="hero-actions">
+          <a class="btn btn-yellow" href="tel:+447484258141">07484 258141</a>
+          <a class="btn btn-ghost" href="#work">See the work</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="images/projects/garage-rebuild/after.jpg" alt="Rebuilt garage with timber-clad gable and new roof beside a stone wall" width="1600" height="900">
+      </div>
+    </div>
+  </div>
+
+  <section id="work">
+    <div class="wrap">
+      <p class="eyebrow">Recent projects</p>
+      <h2>Before &amp; after</h2>
+      <p class="lead">A few jobs from start to finish. Tap any photo to see it full size.</p>
+      <div id="projects"></div>
+    </div>
+  </section>
+
+  <section id="gallery" style="padding-top:0">
+    <div class="wrap">
+      <p class="eyebrow">More work</p>
+      <h2>Carpentry, fencing &amp; groundworks</h2>
+      <p class="lead">Gates, doors, porches, fencing, Cornish hedging and groundworks.</p>
+      <div class="gallery" id="more"></div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="wrap">
+      <p class="eyebrow">What I do</p>
+      <h2>Services</h2>
+      <p class="lead">One builder from groundworks to the finishing joinery.</p>
+      <div class="service-grid">
+        <div class="service"><h3>Renovations</h3><p>Kitchens, bathrooms and full refurbishments.</p></div>
+        <div class="service"><h3>Carpentry &amp; joinery</h3><p>Garden gates, barn doors, oak-framed porches and timber framing.</p></div>
+        <div class="service"><h3>Outbuildings</h3><p>Garages, workshops and shepherd's huts, built from the ground up.</p></div>
+        <div class="service"><h3>Walls &amp; rendering</h3><p>Blockwork, rendered garden walls and Cornish hedge stonework.</p></div>
+        <div class="service"><h3>Fencing</h3><p>Closeboard and stock fencing for gardens, lanes and fields.</p></div>
+        <div class="service"><h3>Groundworks &amp; drainage</h3><p>Trenching, drainage runs and site prep with my own mini digger.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <p class="eyebrow">Get in touch</p>
+      <h2>Talk about your job</h2>
+      <p class="lead">Call or email with what you have in mind and I'll get back to you.</p>
+      <div class="contact-card">
+        <div class="contact-lines">
+          <a href="tel:+447484258141">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            07484 258141
+          </a>
+          <a href="mailto:freethstuart@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg>
+            freethstuart@gmail.com
+          </a>
+          <span style="display:inline-flex;align-items:center;gap:12px;min-height:44px">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+            Truro, Cornwall
+          </span>
+        </div>
+        <a class="btn btn-yellow" href="tel:+447484258141">Call now</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>SF Building &amp; Carpentry is the trading name of Stuart Freeth.</span>
+    <span>Truro, Cornwall</span>
+  </div>
+</footer>
+
+<dialog id="viewer" aria-label="Photo viewer">
+  <button class="close" id="close" aria-label="Close photo">×</button>
+  <img id="viewer-img" alt="">
+  <p id="viewer-cap"></p>
+</dialog>
+
+<script>
+  // Photos are listed in images/photos.json — add new files there and they appear here.
+  const viewer = document.getElementById('viewer');
+  const vImg = document.getElementById('viewer-img');
+  const vCap = document.getElementById('viewer-cap');
+  document.getElementById('close').addEventListener('click', () => viewer.close());
+  viewer.addEventListener('click', e => { if (e.target === viewer) viewer.close(); });
+
+  function shot(src, alt, tag) {
+    const fig = document.createElement('figure');
+    const btn = document.createElement('button');
+    btn.setAttribute('aria-label', 'View larger: ' + alt);
+    const img = document.createElement('img');
+    img.src = src; img.alt = alt; img.loading = 'lazy';
+    btn.appendChild(img);
+    btn.addEventListener('click', () => { vImg.src = src; vImg.alt = alt; vCap.textContent = alt; viewer.showModal(); });
+    fig.appendChild(btn);
+    if (tag) {
+      const t = document.createElement('span');
+      t.className = 'tag tag-' + tag; t.textContent = tag;
+      fig.appendChild(t);
+    }
+    return fig;
+  }
+
+  fetch('images/photos.json').then(r => r.json()).then(data => {
+    const projects = document.getElementById('projects');
+    data.projects.forEach(p => {
+      const card = document.createElement('article');
+      card.className = 'project';
+      const h = document.createElement('h3'); h.textContent = p.title; card.appendChild(h);
+      const grid = document.createElement('div'); grid.className = 'shots';
+      ['before', 'during', 'after'].forEach(stage => {
+        (p[stage] || []).forEach(file => {
+          grid.appendChild(shot(`images/projects/${p.slug}/${file}`, `${p.title} — ${stage}`, stage));
+        });
+      });
+      card.appendChild(grid);
+      projects.appendChild(card);
+    });
+    const more = document.getElementById('more');
+    data.gallery.forEach(g => {
+      const fig = shot(`images/gallery/${g.file}`, g.title);
+      const cap = document.createElement('figcaption'); cap.textContent = g.title;
+      fig.appendChild(cap);
+      more.appendChild(fig);
+    });
+  });
+</script>
+</body>
+</html>
