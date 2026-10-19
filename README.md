@@ -4,7 +4,7 @@ The website for SF Building & Carpentry (Stuart Freeth, Truro, Cornwall).
 
 - `index.html` — the whole site (one page).
 - `logo.svg` — the house monogram logo, also used as the browser icon.
-- `images/projects/<project>/` — before, during and after photos for each project.
+- `images/projects/<project>/` — before, during and after photos for each project. A project can be split into rooms (see the flat renovation in `photos.json`).
 - `images/gallery/` — single photos of other jobs.
 - `images/photos.json` — the list of projects and photos. Add a new photo to a folder and list it here, and it appears on the site.
 
