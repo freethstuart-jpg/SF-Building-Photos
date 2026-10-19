@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SF Building &amp; Carpentry · Renovations &amp; extensions · Truro &amp; the Roseland</title>
-<meta name="description" content="SF Building &amp; Carpentry. Stuart Freeth, general builder with 6 years of experience in renovations and extensions. Based in Truro with a yard on the Roseland, Cornwall.">
+<meta name="description" content="SF Building &amp; Carpentry. Stuart Freeth, general builder with 7 years of experience in renovations and extensions. Based in Truro with a yard on the Roseland, Cornwall.">
 <meta name="theme-color" content="#0A0A0B">
 <link rel="icon" href="logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -31,7 +31,7 @@
     --text: #F3F3F1;
     --muted: #A6A9B0;
     --dim: #868991;
-    --glow-text: 0 0 10px rgba(255, 255, 255, .55), 0 0 28px rgba(255, 255, 255, .22);
+    --glow-text: 0 0 8px rgba(255, 255, 255, .12);
     color-scheme: dark;
   }
   * { box-sizing: border-box; }
@@ -48,12 +48,12 @@
 
   /* Logo */
   .mark { display: block; height: auto; color: #fff; overflow: visible; }
-  .glow { filter: drop-shadow(0 0 2px rgba(255, 255, 255, .9)) drop-shadow(0 0 14px rgba(255, 255, 255, .5)) drop-shadow(0 0 44px rgba(255, 255, 255, .25)); }
-  .glow-sm { filter: drop-shadow(0 0 1.5px rgba(255, 255, 255, .85)) drop-shadow(0 0 8px rgba(255, 255, 255, .4)); }
+  .glow { filter: drop-shadow(0 0 12px rgba(255, 255, 255, .12)); }
+  .glow-sm { filter: drop-shadow(0 0 5px rgba(255, 255, 255, .1)); }
   .lockup { display: inline-flex; flex-direction: column; align-items: center; }
   .lockup .mark { width: 230px; }
   .lockup-word { margin-top: 22px; padding-left: .42em; color: #fff; font-size: 15px; font-weight: 600; letter-spacing: .42em; text-transform: uppercase; white-space: nowrap; text-shadow: var(--glow-text); }
-  .lockup-rule { width: 38%; height: 3px; margin-top: 16px; background: #fff; box-shadow: 0 0 8px rgba(255, 255, 255, .7), 0 0 22px rgba(255, 255, 255, .3); }
+  .lockup-rule { width: 38%; height: 3px; margin-top: 16px; background: #fff; box-shadow: 0 0 8px rgba(255, 255, 255, .12); }
   .ico { width: 20px; height: 20px; flex: none; }
 
   /* Header */
@@ -66,21 +66,21 @@
   .brand-text span { display: block; font-size: 10px; font-weight: 500; letter-spacing: .32em; color: var(--muted); }
   .nav { display: flex; align-items: center; gap: 30px; }
   .nav .link { font-size: 12px; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; text-decoration: none; color: var(--muted); transition: color .2s, text-shadow .2s; }
-  .nav .link:hover { color: #fff; text-shadow: 0 0 10px rgba(255, 255, 255, .6); }
+  .nav .link:hover { color: #fff; }
 
   /* Buttons */
   .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 50px; padding: 0 26px; border: 1px solid transparent; border-radius: 2px; font: inherit; font-size: 12px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: box-shadow .25s, border-color .25s, background .25s, color .25s; }
   .btn .ico { width: 18px; height: 18px; }
   .btn-solid { background: #fff; color: #0A0A0B; }
-  .btn-solid:hover { box-shadow: 0 0 24px rgba(255, 255, 255, .45); }
+  .btn-solid:hover { background: #E4E4E1; }
   .btn-line { border-color: rgba(255, 255, 255, .5); color: #fff; }
-  .btn-line:hover { border-color: #fff; box-shadow: 0 0 20px rgba(255, 255, 255, .22), inset 0 0 14px rgba(255, 255, 255, .07); }
+  .btn-line:hover { border-color: #fff; background: rgba(255, 255, 255, .06); }
   .btn-sm { min-height: 44px; padding: 0 18px; }
 
   /* Hero */
   .hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); min-height: min(88vh, 800px); border-bottom: 1px solid var(--line); }
   .hero-content { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 72px 40px 64px; text-align: center; }
-  .hero-content::before { content: ""; position: absolute; left: 50%; top: 32%; z-index: -1; width: 560px; height: 560px; max-width: 100%; transform: translate(-50%, -50%); background: radial-gradient(closest-side, rgba(255, 255, 255, .07), rgba(255, 255, 255, 0)); pointer-events: none; }
+  .hero-content::before { content: ""; position: absolute; left: 50%; top: 32%; z-index: -1; width: 560px; height: 560px; max-width: 100%; transform: translate(-50%, -50%); background: radial-gradient(closest-side, rgba(255, 255, 255, .025), rgba(255, 255, 255, 0)); pointer-events: none; }
   .hero .lockup { margin-bottom: 44px; }
   .hero h1 { max-width: 17ch; margin: 0 0 18px; font-size: clamp(28px, 3.1vw, 42px); font-weight: 600; line-height: 1.14; letter-spacing: .04em; text-transform: uppercase; }
   .intro { max-width: 44ch; margin: 0 0 32px; color: var(--muted); font-size: 17px; }
@@ -130,7 +130,7 @@
   .tag { position: absolute; top: 10px; left: 10px; padding: 5px 9px 4px; font-size: 10px; font-weight: 600; line-height: 1.2; letter-spacing: .22em; text-transform: uppercase; pointer-events: none; }
   .tag-before { background: rgba(10, 10, 11, .82); color: #fff; outline: 1px solid rgba(255, 255, 255, .35); }
   .tag-during { background: rgba(58, 60, 66, .92); color: #fff; }
-  .tag-after { background: #fff; color: #0A0A0B; box-shadow: 0 0 14px rgba(255, 255, 255, .5); }
+  .tag-after { background: #fff; color: #0A0A0B; }
   .subhead { margin: 72px 0 28px; }
   .subhead h3 { margin: 0; font-size: 22px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
   .gallery .shot figcaption { padding: 12px 14px; border-top: 1px solid var(--line); background: var(--card); font-size: 13px; font-weight: 500; letter-spacing: .03em; }
@@ -138,7 +138,7 @@
   /* Services */
   .services-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
   .service { padding: 30px 28px 34px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); transition: background .3s, box-shadow .3s; }
-  .service:hover { background: var(--card); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .28), 0 0 30px rgba(255, 255, 255, .06); }
+  .service:hover { background: var(--card); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .22); }
   .service .num { font-size: 12px; font-weight: 600; letter-spacing: .3em; color: var(--dim); }
   .service h3 { margin: 18px 0 8px; font-size: 15px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
   .service p { margin: 0; color: var(--muted); font-size: 15px; }
@@ -158,7 +158,7 @@
   /* How it works */
   .steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0 32px; margin: 0; padding: 0; list-style: none; }
   .steps li { padding: 28px 0 32px; border-top: 1px solid var(--line-2); }
-  .step-num { font-size: 44px; font-weight: 600; line-height: 1; color: transparent; -webkit-text-stroke: 1px rgba(255, 255, 255, .7); text-shadow: 0 0 18px rgba(255, 255, 255, .15); }
+  .step-num { font-size: 44px; font-weight: 600; line-height: 1; color: transparent; -webkit-text-stroke: 1px rgba(255, 255, 255, .7); }
   .steps h3 { margin: 18px 0 8px; font-size: 15px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
   .steps p { margin: 0; color: var(--muted); font-size: 15px; }
 
@@ -166,12 +166,11 @@
   .contact { text-align: center; }
   .contact .label { justify-content: center; }
   .contact .label::before { content: ""; width: 56px; height: 1px; background: var(--line-2); }
-  .contact h2 { text-shadow: 0 0 22px rgba(255, 255, 255, .22); }
   .contact .lead { margin: 0 auto 44px; }
   .tiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; max-width: 900px; margin: 0 auto; }
   .tile { display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 38px 20px 34px; border: 1px solid var(--line-2); background: var(--bg-2); text-decoration: none; transition: border-color .25s, box-shadow .25s; }
-  .tile:hover { border-color: #fff; box-shadow: 0 0 28px rgba(255, 255, 255, .18), inset 0 0 22px rgba(255, 255, 255, .05); }
-  .tile .ico { width: 28px; height: 28px; filter: drop-shadow(0 0 6px rgba(255, 255, 255, .5)); }
+  .tile:hover { border-color: #fff; background: var(--card); }
+  .tile .ico { width: 28px; height: 28px; }
   .tile .k { font-size: 11px; font-weight: 600; letter-spacing: .3em; text-transform: uppercase; color: var(--dim); }
   .tile .v { font-size: clamp(17px, 2.2vw, 24px); font-weight: 600; letter-spacing: .03em; overflow-wrap: anywhere; }
   .where { margin: 32px 0 0; color: var(--muted); font-size: 14px; letter-spacing: .04em; }
@@ -195,7 +194,7 @@
   .v-meta { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 18px; margin-top: 14px; font-size: 12px; font-weight: 600; letter-spacing: .2em; text-align: center; text-transform: uppercase; color: var(--muted); }
   #v-count { white-space: nowrap; color: var(--dim); }
   .vbtn { position: fixed; display: grid; place-items: center; width: 52px; height: 52px; padding: 0; border: 1px solid rgba(255, 255, 255, .45); border-radius: 50%; background: rgba(10, 10, 11, .7); color: #fff; cursor: pointer; transition: border-color .2s, box-shadow .2s; }
-  .vbtn:hover { border-color: #fff; box-shadow: 0 0 18px rgba(255, 255, 255, .3); }
+  .vbtn:hover { border-color: #fff; }
   .vbtn[hidden] { display: none; }
   .vbtn .ico { width: 22px; height: 22px; }
   .v-close { top: 16px; right: 16px; }
@@ -301,7 +300,7 @@
         <span class="lockup-rule" aria-hidden="true"></span>
       </div>
       <h1 id="hero-title">Renovations &amp; extensions across Cornwall</h1>
-      <p class="intro">I'm Stuart Freeth, a general builder with 6 years of experience in renovations and extensions. Based in Truro, with a yard on the Roseland.</p>
+      <p class="intro">I'm Stuart Freeth, a general builder with 7 years of experience in renovations and extensions. Based in Truro, with a yard on the Roseland.</p>
       <div class="actions">
         <a class="btn btn-solid" href="tel:+447484258141">
           <svg class="ico" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-phone"/></svg>
@@ -310,7 +309,7 @@
         <a class="btn btn-line" href="#work">See the work</a>
       </div>
       <dl class="stats">
-        <div><dt>Experience</dt><dd>6 years</dd></div>
+        <div><dt>Experience</dt><dd>7 years</dd></div>
         <div><dt>Based in</dt><dd>Truro</dd></div>
         <div><dt>Yard</dt><dd>The Roseland</dd></div>
       </dl>
@@ -374,7 +373,7 @@
         <p class="label">03 / About</p>
         <h2 id="about-title">A builder you deal with directly</h2>
         <p class="big">I'm Stuart Freeth, a general builder based in Truro with a yard on the Roseland.</p>
-        <p>I've spent the last 6 years on residential building work across Cornwall, mostly renovations and extensions, along with carpentry, concreting and groundworks.</p>
+        <p>I've spent the last 7 years on residential building work across Cornwall, mostly renovations and extensions, along with carpentry, concreting and groundworks.</p>
         <p>When you get in touch, you deal with me directly, from the first site visit to the finished job.</p>
         <div class="signoff">
           <svg class="mark glow-sm" viewBox="322 162 925 553" fill="currentColor" aria-hidden="true"><use href="#sf"/></svg>
@@ -397,7 +396,7 @@
       <ol class="steps" data-reveal>
         <li><span class="step-num" aria-hidden="true">01</span><h3>Get in touch</h3><p>Call or email with a rough idea of the job and where it is.</p></li>
         <li><span class="step-num" aria-hidden="true">02</span><h3>Site visit</h3><p>I'll come and look at the job, talk it through with you and take measurements.</p></li>
-        <li><span class="step-num" aria-hidden="true">03</span><h3>Quote</h3><p>You get a clear written quote, so you know where you stand before work starts.</p></li>
+        <li><span class="step-num" aria-hidden="true">03</span><h3>Quote or hourly</h3><p>A clear written quote, or an hourly rate with a fully transparent breakdown on every invoice.</p></li>
         <li><span class="step-num" aria-hidden="true">04</span><h3>The build</h3><p>I get the job done properly and keep you updated along the way.</p></li>
       </ol>
     </div>

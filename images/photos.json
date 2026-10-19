@@ -3,21 +3,21 @@
     {
       "slug": "shepherds-hut",
       "title": "Shepherd's hut build",
-      "description": "Framed, clad and fitted out: corrugated steel cladding, hardwood doors and steps, a tongue-and-groove interior, kitchen, shower room and bedroom.",
+      "description": "Designed, built and situated from scratch, with corrugated steel cladding, hardwood doors and steps, a tongue-and-groove interior, kitchen, shower room and bedroom.",
       "during": [
         "during-1.jpg",
         "during-cladding.jpg",
         "during-steps.jpg",
         "during-kitchen.jpg",
         "during-bedroom.jpg",
+        "during-shower.jpg",
         "during-workshop.jpg",
         "during-2.jpg"
       ],
       "after": [
         "after-1.jpg",
         "after-2.jpg",
-        "after-3.jpg",
-        "after-shower.jpg"
+        "after-3.jpg"
       ]
     },
     {
