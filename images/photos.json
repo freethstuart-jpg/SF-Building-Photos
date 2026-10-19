@@ -104,13 +104,15 @@
     {
       "slug": "fencing",
       "title": "Hit and miss fencing",
-      "description": "A long run of hit and miss fencing on steel posts along a lane boundary.",
+      "description": "A long run of hit and miss fencing on steel posts along a lane boundary, with new timber garden gates.",
       "during": [
         "during.jpg"
       ],
       "after": [
         "after-1.jpg",
-        "after-2.jpg"
+        "after-2.jpg",
+        "after-gate-1.jpg",
+        "after-gate-2.jpg"
       ]
     },
     {
@@ -139,8 +141,8 @@
   ],
   "gallery": [
     {
-      "file": "cornish-hedge.jpg",
-      "title": "Cornish hedge stonework"
+      "file": "stonework.jpg",
+      "title": "Stonework"
     },
     {
       "file": "groundworks-trench.jpg",
@@ -148,23 +150,15 @@
     },
     {
       "file": "farm-blockwork.jpg",
-      "title": "Farm building blockwork"
+      "title": "Blockwork"
     },
     {
       "file": "barn-doors.jpg",
       "title": "Barn doors"
     },
     {
-      "file": "stonework.jpg",
-      "title": "Stonework"
-    },
-    {
-      "file": "garden-gate-timber.jpg",
-      "title": "Timber garden gate"
-    },
-    {
-      "file": "arched-garden-gate.jpg",
-      "title": "Arched garden gate"
+      "file": "cornish-hedge.jpg",
+      "title": "Cornish hedge stonework"
     }
   ]
 }
