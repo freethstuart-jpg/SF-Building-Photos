@@ -94,6 +94,7 @@
         "before.jpg"
       ],
       "during": [
+        "during-piers.jpg",
         "during.jpg"
       ],
       "after": [
@@ -102,8 +103,8 @@
     },
     {
       "slug": "fencing",
-      "title": "Closeboard fencing",
-      "description": "A long run of closeboard fencing on steel posts along a lane boundary.",
+      "title": "Hit and miss fencing",
+      "description": "A long run of hit and miss fencing on steel posts along a lane boundary.",
       "during": [
         "during.jpg"
       ],
@@ -144,10 +145,6 @@
     {
       "file": "groundworks-trench.jpg",
       "title": "Groundworks"
-    },
-    {
-      "file": "blockwork-piers.jpg",
-      "title": "Blockwork piers"
     },
     {
       "file": "farm-blockwork.jpg",

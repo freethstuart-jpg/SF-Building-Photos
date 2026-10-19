@@ -171,6 +171,7 @@
   .tile { display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 38px 20px 34px; border: 1px solid var(--line-2); background: var(--bg-2); text-decoration: none; transition: border-color .25s, box-shadow .25s; }
   .tile:hover { border-color: #fff; background: var(--card); }
   .tile .ico { width: 28px; height: 28px; }
+  .tile-main { border-color: rgba(255, 255, 255, .6); background: var(--card); }
   .tile .k { font-size: 11px; font-weight: 600; letter-spacing: .3em; text-transform: uppercase; color: var(--dim); }
   .tile .v { font-size: clamp(17px, 2.2vw, 24px); font-weight: 600; letter-spacing: .03em; overflow-wrap: anywhere; }
   .where { margin: 32px 0 0; color: var(--muted); font-size: 14px; letter-spacing: .04em; }
@@ -282,9 +283,9 @@
       <a class="link" href="#services">Services</a>
       <a class="link" href="#about">About</a>
       <a class="link" href="#contact">Contact</a>
-      <a class="btn btn-line btn-sm btn-call" href="tel:+447484258141">
-        <svg class="ico" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-phone"/></svg>
-        <span class="label-text">Call</span>
+      <a class="btn btn-line btn-sm btn-call" href="mailto:freethstuart@gmail.com?subject=Building%20enquiry">
+        <svg class="ico" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-mail"/></svg>
+        <span class="label-text">Email</span>
       </a>
     </nav>
   </div>
@@ -301,11 +302,14 @@
       <h1 id="hero-title">Building, carpentry &amp; repairs across Cornwall</h1>
       <p class="intro">I'm Stuart Freeth, a general builder with 7 years of experience. Happy to take on smaller jobs, from carpentry and fencing to walls, concreting and repairs. Based in Truro, with a yard on the Roseland.</p>
       <div class="actions">
-        <a class="btn btn-solid" href="tel:+447484258141">
+        <a class="btn btn-solid" href="mailto:freethstuart@gmail.com?subject=Building%20enquiry">
+          <svg class="ico" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-mail"/></svg>
+          Email me
+        </a>
+        <a class="btn btn-line" href="tel:+447484258141">
           <svg class="ico" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-phone"/></svg>
           07484 258141
         </a>
-        <a class="btn btn-line" href="#work">See the work</a>
       </div>
       <dl class="stats">
         <div><dt>Experience</dt><dd>7 years</dd></div>
@@ -321,10 +325,10 @@
   <div class="ticker" aria-label="Services">
     <div class="ticker-track">
       <ul>
-        <li>Renovations</li><li>Extensions</li><li>First fix carpentry</li><li>Second fix carpentry</li><li>Concreting</li><li>Groundworks</li><li>Rendering</li><li>Stonework</li><li>Fencing &amp; gates</li>
+        <li>Renovations</li><li>Extensions</li><li>First fix carpentry</li><li>Second fix carpentry</li><li>Groundworks</li><li>Rendering</li><li>Stonework</li><li>Fencing &amp; gates</li><li>Concreting</li>
       </ul>
       <ul aria-hidden="true">
-        <li>Renovations</li><li>Extensions</li><li>First fix carpentry</li><li>Second fix carpentry</li><li>Concreting</li><li>Groundworks</li><li>Rendering</li><li>Stonework</li><li>Fencing &amp; gates</li>
+        <li>Renovations</li><li>Extensions</li><li>First fix carpentry</li><li>Second fix carpentry</li><li>Groundworks</li><li>Rendering</li><li>Stonework</li><li>Fencing &amp; gates</li><li>Concreting</li>
       </ul>
     </div>
   </div>
@@ -357,11 +361,11 @@
         <div class="service"><span class="num">02</span><h3>Extensions</h3><p>Extensions and porches, from the foundations to the finishing touches.</p></div>
         <div class="service"><span class="num">03</span><h3>First fix carpentry</h3><p>Stud walls, floor and roof joists, timber framing and structural timberwork.</p></div>
         <div class="service"><span class="num">04</span><h3>Second fix carpentry</h3><p>Doors, skirting, architrave, kitchen fitting and built-in storage.</p></div>
-        <div class="service"><span class="num">05</span><h3>Concreting</h3><p>Foundations, slabs, bases, paths and driveways.</p></div>
-        <div class="service"><span class="num">06</span><h3>Groundworks &amp; drainage</h3><p>Trenching, drainage runs and site prep, with my own mini digger.</p></div>
-        <div class="service"><span class="num">07</span><h3>Walls, render &amp; stonework</h3><p>Blockwork, rendering, stonework and Cornish hedging.</p></div>
-        <div class="service"><span class="num">08</span><h3>Outbuildings &amp; joinery</h3><p>Garages, workshops, barn doors, balconies and steps.</p></div>
-        <div class="service"><span class="num">09</span><h3>Fencing &amp; gates</h3><p>Closeboard fencing and made-to-measure timber gates.</p></div>
+        <div class="service"><span class="num">05</span><h3>Groundworks &amp; drainage</h3><p>Trenching, drainage runs and site prep, with access to a mini digger.</p></div>
+        <div class="service"><span class="num">06</span><h3>Walls, render &amp; stonework</h3><p>Blockwork, rendering, stonework and Cornish hedging.</p></div>
+        <div class="service"><span class="num">07</span><h3>Outbuildings &amp; joinery</h3><p>Garages, workshops, barn doors, balconies and steps.</p></div>
+        <div class="service"><span class="num">08</span><h3>Fencing &amp; gates</h3><p>Hit and miss fencing and made-to-measure timber gates.</p></div>
+        <div class="service"><span class="num">09</span><h3>Concreting</h3><p>Foundations, slabs, bases, paths and driveways.</p></div>
       </div>
     </div>
   </section>
@@ -392,7 +396,7 @@
         <h2 id="process-title">From first call to finished job</h2>
       </div>
       <ol class="steps" data-reveal>
-        <li><span class="step-num" aria-hidden="true">01</span><h3>Get in touch</h3><p>Call or email with a rough idea of the job and where it is.</p></li>
+        <li><span class="step-num" aria-hidden="true">01</span><h3>Get in touch</h3><p>Email or call with a rough idea of the job and where it is.</p></li>
         <li><span class="step-num" aria-hidden="true">02</span><h3>Site visit</h3><p>I'll come and look at the job, talk it through with you and take measurements.</p></li>
         <li><span class="step-num" aria-hidden="true">03</span><h3>Quote or hourly</h3><p>A clear written quote, or an hourly rate with a fully transparent breakdown on every invoice.</p></li>
         <li><span class="step-num" aria-hidden="true">04</span><h3>The build</h3><p>I get the job done properly and keep you updated along the way.</p></li>
@@ -405,18 +409,18 @@
       <div data-reveal>
         <p class="label">05 / Contact</p>
         <h2 id="contact-title">Tell me about your project</h2>
-        <p class="lead">Call or email with what you have in mind and I'll get back to you.</p>
+        <p class="lead">Email or call with what you have in mind and I'll get back to you.</p>
       </div>
       <div class="tiles" data-reveal>
+        <a class="tile tile-main" href="mailto:freethstuart@gmail.com?subject=Building%20enquiry">
+          <svg class="ico" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-mail"/></svg>
+          <span class="k">Email</span>
+          <span class="v">freethstuart@gmail.com</span>
+        </a>
         <a class="tile" href="tel:+447484258141">
           <svg class="ico" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-phone"/></svg>
           <span class="k">Call</span>
           <span class="v">07484 258141</span>
-        </a>
-        <a class="tile" href="mailto:freethstuart@gmail.com?subject=Building%20enquiry">
-          <svg class="ico" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-mail"/></svg>
-          <span class="k">Email</span>
-          <span class="v">freethstuart@gmail.com</span>
         </a>
       </div>
       <p class="where">Based in Truro, with a yard on the Roseland. Working across Cornwall.</p>
