@@ -5,6 +5,7 @@
       "title": "Shepherd's hut build",
       "description": "Designed, built and situated from scratch, with corrugated steel cladding, hardwood doors and steps, a tongue-and-groove interior, kitchen, shower room and bedroom.",
       "during": [
+        "during-frame.jpg",
         "during-1.jpg",
         "during-cladding.jpg",
         "during-steps.jpg",
@@ -16,6 +17,7 @@
       ],
       "after": [
         "after-1.jpg",
+        "after-garden.jpg",
         "after-2.jpg",
         "after-3.jpg"
       ]
@@ -99,6 +101,18 @@
       ]
     },
     {
+      "slug": "fencing",
+      "title": "Closeboard fencing",
+      "description": "A long run of closeboard fencing on steel posts along a lane boundary.",
+      "during": [
+        "during.jpg"
+      ],
+      "after": [
+        "after-1.jpg",
+        "after-2.jpg"
+      ]
+    },
+    {
       "slug": "repairs",
       "title": "Roof & chimney repairs",
       "description": "A roof opened up to replace rotten timbers, and a chimney stack ready for repair.",
@@ -132,16 +146,20 @@
       "title": "Groundworks"
     },
     {
+      "file": "blockwork-piers.jpg",
+      "title": "Blockwork piers"
+    },
+    {
+      "file": "farm-blockwork.jpg",
+      "title": "Farm building blockwork"
+    },
+    {
       "file": "barn-doors.jpg",
       "title": "Barn doors"
     },
     {
       "file": "stonework.jpg",
       "title": "Stonework"
-    },
-    {
-      "file": "closeboard-fence.jpg",
-      "title": "Closeboard fencing"
     },
     {
       "file": "garden-gate-timber.jpg",
