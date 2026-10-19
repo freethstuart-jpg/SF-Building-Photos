@@ -1,7 +1,7 @@
 # SF Building & Carpentry — website
 
 The website for SF Building & Carpentry (Stuart Freeth, Truro, Cornwall).
-Live at https://freethstuart-jpg.github.io/SF-Building-Photos/
+Live at https://sfbuildingandcarpentry.co.uk/
 
 - `index.html` — the whole site (one page: work, services, about, how it works, contact).
 - `logo.svg` — the SF roofline mark, used as the browser icon. `apple-touch-icon.png` is the phone home-screen icon and `og-image.jpg` is the preview shown when the link is shared.
