@@ -3,7 +3,7 @@
     {
       "slug": "shepherds-hut",
       "title": "Shepherd's hut build",
-      "description": "Designed, built and situated from scratch, with corrugated steel cladding, hardwood doors and steps, a tongue-and-groove interior, kitchen, shower room and bedroom.",
+      "description": "Designed, built and situated from scratch, with corrugated steel cladding, hardwood doors and steps, a tongue-and-groove interior, kitchen, shower room and bedroom, set in its own picket-fenced garden with a timber gate.",
       "during": [
         "during-frame.jpg",
         "during-1.jpg",
@@ -17,7 +17,7 @@
       ],
       "after": [
         "after-1.jpg",
-        "after-garden.jpg",
+        "after-fencing.jpg",
         "after-2.jpg",
         "after-3.jpg"
       ]
@@ -65,8 +65,8 @@
     },
     {
       "slug": "garage-rebuild",
-      "title": "Garage rebuild",
-      "description": "The old block garage replaced with a new timber-framed building, rendered and clad, under a new roof.",
+      "title": "Garage renovation",
+      "description": "The two original blockwork walls kept and rendered, with a new timber-clad front and a new corrugated roof.",
       "before": [
         "before.jpg"
       ],
@@ -75,7 +75,9 @@
         "during.jpg"
       ],
       "after": [
-        "after.jpg"
+        "after-2.jpg",
+        "after-3.jpg",
+        "after-4.jpg"
       ]
     },
     {
@@ -94,13 +96,17 @@
     },
     {
       "slug": "repairs",
-      "title": "Roof & chimney repairs",
-      "description": "A roof opened up to replace rotten timbers, and a chimney stack ready for repair.",
+      "title": "Chimney removal & roof repair",
+      "description": "A redundant chimney stack taken down from scaffolding, then the roof opened up to replace rotten timbers and slated back in.",
       "before": [
+        "chimney-scaffold.jpg",
         "chimney-before.jpg"
       ],
       "during": [
         "roof-during.jpg"
+      ],
+      "after": [
+        "roof-after.jpg"
       ]
     },
     {
@@ -155,6 +161,10 @@
     {
       "file": "barn-doors.jpg",
       "title": "Barn doors"
+    },
+    {
+      "file": "shed-front.jpg",
+      "title": "Shed front rebuild"
     },
     {
       "file": "cornish-hedge.jpg",
