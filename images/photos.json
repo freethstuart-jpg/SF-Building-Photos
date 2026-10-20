@@ -68,6 +68,7 @@
       "title": "Garage renovation",
       "description": "The two original blockwork walls kept and rendered, with a new timber-clad front and a new corrugated roof.",
       "before": [
+        "before-shed.jpg",
         "before.jpg"
       ],
       "during": [
