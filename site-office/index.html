@@ -13,13 +13,14 @@
 <script>
   // Opened from the home screen: go straight into Site Office.
   (function () {
-    var ID = "UwTmGfjKXpK1ggnqPmW8kd";
-    var WEB = "https://claude.ai/artifact/" + ID;
+    var WEB = "https://claude.ai/artifact/UwTmGfjKXpK1ggnqPmW8kd";
+    // The same app's address under claude.ai/code, the part of claude.ai the Claude phone app opens links for.
+    var IN_APP = "claude.ai/code/artifact/e241669e-7de4-4fcd-82a1-94c2830c5866";
     // On Android, hand the link to the Claude app so Site Office opens there rather than as a web page.
     // If the Claude app can't take it, Chrome opens the web page instead.
     var android = /Android/i.test(navigator.userAgent);
     var APP = android
-      ? "intent://claude.ai/artifact/" + ID + "#Intent;scheme=https;action=android.intent.action.VIEW;package=com.anthropic.claude;S.browser_fallback_url=" + encodeURIComponent(WEB) + ";end"
+      ? "intent://" + IN_APP + "#Intent;scheme=https;action=android.intent.action.VIEW;package=com.anthropic.claude;S.browser_fallback_url=" + encodeURIComponent(WEB) + ";end"
       : WEB;
     window.SITE_OFFICE = APP;
     var launched = /[?&]launch=1/.test(location.search) ||
