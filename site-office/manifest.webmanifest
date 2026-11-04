@@ -6,6 +6,7 @@
   "start_url": "/site-office/?launch=1",
   "scope": "/site-office/",
   "display": "standalone",
+  "launch_handler": { "client_mode": ["navigate-existing", "auto"] },
   "background_color": "#e8ebee",
   "theme_color": "#e8ebee",
   "icons": [
