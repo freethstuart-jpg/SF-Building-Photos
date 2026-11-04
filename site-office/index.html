@@ -9,42 +9,15 @@
 <link rel="icon" href="icon-192.png" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="apple-mobile-web-app-title" content="Site Office">
-<meta name="theme-color" content="#e8ebee">
+<meta name="theme-color" content="#1a1a19">
 <script>
-  // Opened from the home screen: go straight into Site Office.
+  // Opened from the home screen: go straight to Site Office.
   (function () {
-    var WEB = "https://claude.ai/artifact/UwTmGfjKXpK1ggnqPmW8kd";
-    // The same app's address under claude.ai/code, the part of claude.ai the Claude phone app opens links for.
-    var IN_APP = "claude.ai/code/artifact/e241669e-7de4-4fcd-82a1-94c2830c5866";
-    // On Android, hand the link to the Claude app so Site Office opens there rather than as a web page.
-    // If the Claude app can't take it, Chrome opens the web page instead.
-    var android = /Android/i.test(navigator.userAgent);
-    var APP = android
-      ? "intent://" + IN_APP + "#Intent;scheme=https;action=android.intent.action.VIEW;package=com.anthropic.claude;S.browser_fallback_url=" + encodeURIComponent(WEB) + ";end"
-      : WEB;
-    window.SITE_OFFICE = APP;
+    var APP = "https://claude.ai/artifact/UwTmGfjKXpK1ggnqPmW8kd";
     var launched = /[?&]launch=1/.test(location.search) ||
       (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches) ||
       window.navigator.standalone === true;
-    if (!launched) return;
-    document.documentElement.className = "launching";
-    if (!android) { location.replace(APP); return; }
-    var left = false;
-    var offer = function () { document.documentElement.className = "launched"; };
-    document.addEventListener("visibilitychange", function () {
-      if (document.visibilityState === "hidden") {
-        // The Claude app has opened. Close this window so the icon starts afresh next time
-        // and pressing Back in Claude doesn't land here.
-        left = true;
-        setTimeout(function () { try { window.close(); } catch (e) {} }, 400);
-      } else if (left) {
-        // Back here after Claude: show the button rather than bouncing straight out again.
-        offer();
-      }
-    });
-    // If nothing has happened after a moment, show a button to tap instead.
-    setTimeout(function () { if (!left) offer(); }, 2500);
-    location.href = APP;
+    if (launched) { document.documentElement.className = "launching"; location.replace(APP); }
   })();
 </script>
 <style>
@@ -59,7 +32,7 @@
   p { margin: 0; color: var(--ink-2); }
   a.btn { display: inline-block; margin-top: 6px; padding: 13px 22px; border-radius: 12px; background: var(--accent); color: var(--accent-ink); font-weight: 700; text-decoration: none; }
   .opening { display: none; }
-  .launching .setup, .launched .setup, .launching .btn { display: none; }
+  .launching .setup, .launching .btn { display: none; }
   .launching .opening { display: block; }
 </style>
 </head>
@@ -69,10 +42,7 @@
   <h1>Site Office</h1>
   <p class="setup">To put this on your home screen, open Chrome's menu and tap <b>Add to Home screen</b>. Tapping that icon opens your app.</p>
   <p class="opening" role="status">Opening Site Office…</p>
-  <a class="btn" id="open" href="https://claude.ai/artifact/UwTmGfjKXpK1ggnqPmW8kd">Open Site Office</a>
+  <a class="btn" href="https://claude.ai/artifact/UwTmGfjKXpK1ggnqPmW8kd">Open Site Office</a>
 </main>
-<script>
-  if (window.SITE_OFFICE) document.getElementById("open").href = window.SITE_OFFICE;
-</script>
 </body>
 </html>
