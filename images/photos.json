@@ -73,14 +73,14 @@
       ],
       "during": [
         "during-frame.jpg",
-        "during-boarding.jpg"
+        "during-boarding.jpg",
+        "during-storage.jpg"
       ],
       "after": [
         "after-1.jpg",
         "after-corridor.jpg",
         "after-door.jpg",
-        "after-room.jpg",
-        "after-storage.jpg"
+        "after-room.jpg"
       ]
     },
     {
