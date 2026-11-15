@@ -64,6 +64,26 @@
       ]
     },
     {
+      "slug": "farm-shop",
+      "title": "Farm shop kitchen & storage fit-out, phase 1",
+      "description": "An open bay in the barn turned into new kitchen and storage rooms. Framed out in treated timber, insulated and lined in OSB, with a ceiling that follows the curve of the roof, a sliding door on a top track and a hatch up to the storage space above.",
+      "before": [
+        "before-1.jpg",
+        "before-2.jpg"
+      ],
+      "during": [
+        "during-frame.jpg",
+        "during-boarding.jpg"
+      ],
+      "after": [
+        "after-1.jpg",
+        "after-corridor.jpg",
+        "after-door.jpg",
+        "after-room.jpg",
+        "after-storage.jpg"
+      ]
+    },
+    {
       "slug": "garage-rebuild",
       "title": "Garage renovation",
       "description": "The two original blockwork walls kept and rendered, with a new timber-clad front and a new corrugated roof.",
