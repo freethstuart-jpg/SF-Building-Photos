@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /site-office/
+
+Sitemap: https://sfbuildingandcarpentry.co.uk/sitemap.xml

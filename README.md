@@ -5,6 +5,7 @@ Live at https://sfbuildingandcarpentry.co.uk/
 
 - `index.html` — the whole site (one page: work, services, about, how it works, contact).
 - `logo.svg` — the SF roofline mark, used as the browser icon. `apple-touch-icon.png` is the phone home-screen icon and `og-image.jpg` is the preview shown when the link is shared.
+- `sitemap.xml` and `robots.txt` — tell search engines where the site is. The business details search engines read (areas covered, opening hours, social links) are in the `application/ld+json` block at the top of `index.html`; keep them in step with the Google Business Profile.
 - `images/projects/<project>/` — before, during and after photos for each project. A project can be split into rooms (see the flat renovation in `photos.json`).
 - `images/gallery/` — single photos of other jobs.
 - `images/photos.json` — the list of projects, their descriptions and photos. Add a new photo to a folder and list it here, and it appears on the site.
