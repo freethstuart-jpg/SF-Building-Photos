@@ -138,6 +138,19 @@
   .more-work { margin: 40px 0 0; text-align: center; }
   .gallery .shot figcaption { padding: 12px 14px; border-top: 1px solid var(--line); background: var(--card); font-size: 13px; font-weight: 500; letter-spacing: .03em; }
 
+  /* Reviews */
+  .reviews-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 0; padding: 0; list-style: none; }
+  .review { display: flex; flex-direction: column; margin: 0; padding: 30px 30px 26px; border: 1px solid var(--line); background: var(--card); }
+  .review .stars { margin: 0 0 16px; font-size: 16px; letter-spacing: .22em; color: #fff; text-shadow: var(--glow-text); }
+  .review blockquote { flex: 1; margin: 0; font-size: 17px; line-height: 1.6; }
+  .review blockquote p { margin: 0; }
+  .review figcaption { margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .review figcaption b { display: block; font-weight: 600; letter-spacing: .04em; }
+  .review figcaption span { display: block; margin-top: 2px; font-size: 11px; font-weight: 600; letter-spacing: .26em; text-transform: uppercase; color: var(--dim); }
+  .reviews-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 24px; margin-top: 28px; }
+  .rating { margin: 0; font-size: 12px; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; color: var(--muted); }
+  .rating b { color: #fff; }
+
   /* Services */
   .services-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
   .service { padding: 30px 28px 34px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); transition: background .3s, box-shadow .3s; }
@@ -227,6 +240,7 @@
     .hero-photo img { position: static; height: 52vw; max-height: 420px; }
     .hero-photo::after { background: linear-gradient(180deg, var(--bg) 0%, rgba(10, 10, 11, .35) 14%, rgba(10, 10, 11, 0) 32%); }
     .services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .reviews-grid { grid-template-columns: 1fr; }
     .about-grid { grid-template-columns: 1fr; gap: 40px; }
     .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
@@ -330,6 +344,14 @@
     .steps h3 { margin: 10px 0 6px; font-size: 12.5px; letter-spacing: .1em; }
     .steps p { font-size: 13px; line-height: 1.5; }
 
+    /* Reviews */
+    .reviews-grid { gap: 10px; }
+    .review { padding: 20px 18px 18px; }
+    .review .stars { margin-bottom: 10px; font-size: 14px; }
+    .review blockquote { font-size: 15px; line-height: 1.55; }
+    .review figcaption { margin-top: 14px; padding-top: 12px; }
+    .reviews-foot { flex-direction: column; align-items: stretch; text-align: center; margin-top: 20px; }
+
     /* Contact */
     .contact .lead { margin-bottom: 26px; }
     .tiles { gap: 10px; }
@@ -379,6 +401,7 @@
       <a class="link" href="#services">Services</a>
       <a class="link" href="#about">About</a>
       <a class="link" href="#work">Work</a>
+      <a class="link" href="#reviews">Reviews</a>
       <a class="link" href="#contact">Contact</a>
       <a class="btn btn-line btn-sm btn-call" href="mailto:freethstuart@gmail.com?subject=Building%20enquiry">
         <svg class="ico" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-mail"/></svg>
@@ -490,10 +513,40 @@
     </div>
   </section>
 
+  <section class="section" id="reviews" aria-labelledby="reviews-title">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="label">04 / Reviews</p>
+        <h2 id="reviews-title">What customers say</h2>
+        <p class="lead">Reviews left on my Google Business Profile.</p>
+      </div>
+      <ul class="reviews-grid" data-reveal>
+        <li>
+          <figure class="review">
+            <p class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</p>
+            <blockquote><p>“Fantastic service. Very hard working, clean and everything is done to a high standard. We would highly recommend SF Building and Carpentry.”</p></blockquote>
+            <figcaption><b>Robyn T.</b><span>Google review</span></figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="review">
+            <p class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</p>
+            <blockquote><p>“Stuart did some plumbing and concrete work in my yard – he was very polite and hardworking. I would thoroughly recommend.”</p></blockquote>
+            <figcaption><b>Mrs M.</b><span>Google review</span></figcaption>
+          </figure>
+        </li>
+      </ul>
+      <div class="reviews-foot" data-reveal>
+        <p class="rating"><b>5.0</b> on Google</p>
+        <a class="btn btn-line" href="https://www.google.com/maps?cid=5023321650620863497" target="_blank" rel="noopener">See my reviews on Google</a>
+      </div>
+    </div>
+  </section>
+
   <section class="section" id="process" aria-labelledby="process-title">
     <div class="wrap">
       <div class="section-head" data-reveal>
-        <p class="label">04 / How it works</p>
+        <p class="label">05 / How it works</p>
         <h2 id="process-title">From first call to finished job</h2>
       </div>
       <ol class="steps" data-reveal>
@@ -508,7 +561,7 @@
   <section class="section contact" id="contact" aria-labelledby="contact-title">
     <div class="wrap">
       <div data-reveal>
-        <p class="label">05 / Contact</p>
+        <p class="label">06 / Contact</p>
         <h2 id="contact-title">Tell me about your project</h2>
         <p class="lead">Email or WhatsApp with what you have in mind and I'll get back to you.</p>
       </div>
@@ -552,6 +605,7 @@
       <li><a href="#services">Services</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#work">Work</a></li>
+      <li><a href="#reviews">Reviews</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <ul class="foot-nav foot-social" aria-label="Social media">
